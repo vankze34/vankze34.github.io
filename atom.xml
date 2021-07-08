@@ -8,16 +8,61 @@
     
       
       <item>
-        <title>Algorithm-1</title>
+        <title>Programmers  Solution - 다리를 지나는 트럭</title>
         
-          <description>&lt;p&gt;이 글은 알고리즘에 대한 글입니다.&lt;/p&gt;
-&lt;h1 id=&quot;test1&quot;&gt;test1&lt;/h1&gt;
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+
 </description>
         
-        <pubDate>Sat, 12 Jun 2021 02:21:00 +0900</pubDate>
+        <pubDate>Thu, 03 Jun 2021 10:16:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/algorithm3</link>
+        <guid isPermaLink="true">http://localhost:4000/algorithm3</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Programmers  Solution - 기능개발</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42586&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 02 Jun 2021 04:41:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/algorithm2</link>
+        <guid isPermaLink="true">http://localhost:4000/algorithm2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Programmers  Solution - 주식 가격</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 01 Jun 2021 05:55:00 +0900</pubDate>
         <link>
         http://localhost:4000/algorithm1</link>
         <guid isPermaLink="true">http://localhost:4000/algorithm1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>List를 Stack이나 Queue처럼 사용하기</title>
+        
+          <description>&lt;h3 id=&quot;stack&quot;&gt;Stack&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Tue, 18 May 2021 18:43:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/python1</link>
+        <guid isPermaLink="true">http://localhost:4000/python1</guid>
       </item>
       
     

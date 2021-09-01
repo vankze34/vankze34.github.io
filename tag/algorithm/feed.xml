@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-09-01T17:50:21+09:00</updated>
+  <updated>2021-09-01T20:01:23+09:00</updated>
   <id>http://localhost:4000/tag/algorithm/feed.xml</id>
 
   
@@ -127,7 +127,8 @@
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/algorithm/2021-07-08-algorithm4_01.png&quot; alt=&quot;2021-07-08-algorithm4_01&quot; /&gt;&lt;/p&gt;
+&lt;!-- ![2021-07-08-algorithm4_01](http://drive.google.com/uc?export=view&amp;id=1wAht02164aCFH3Kk_u0pRLPCyZlqOFSL) --&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1wAht02164aCFH3Kk_u0pRLPCyZlqOFSL&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;접근방식&quot;&gt;접근방식&lt;/h3&gt;
 
@@ -181,7 +182,7 @@
 &lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;best&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../assets/images/algorithm/2021-07-08-algorithm4_02.png&quot; alt=&quot;2021-07-08-algorithm4_02&quot; /&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=14OkxW24HSeZRgqATTs0s77ce2TMTtzpF&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content>
 
       
       
@@ -219,19 +220,7 @@
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[##_Image&lt;/td&gt;
-      &lt;td&gt;kage@cSNPRZ/btq6mHaCezx/3lFaOepZuFqYF1usHgLKGK/img.png&lt;/td&gt;
-      &lt;td&gt;alignCenter&lt;/td&gt;
-      &lt;td&gt;width=”100%” data-origin-width=”1255” data-origin-height=”962” data-ke-mobilestyle=”widthOrigin”&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_##]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1ztyWa9JrlwuWuTwIiE2FkNMEsMjQqxsl&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;접근방식&quot;&gt;접근방식&lt;/h3&gt;
 
@@ -354,25 +343,7 @@
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[##_Image&lt;/td&gt;
-      &lt;td&gt;kage@cLfinK/btq6kGozMrQ/XFAcoFtmh9XnQ47OFoIaO0/img.png&lt;/td&gt;
-      &lt;td&gt;alignCenter&lt;/td&gt;
-      &lt;td&gt;width=”100%” data-origin-width=”707” data-origin-height=”704” data-ke-mobilestyle=”widthOrigin”&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_##][##_Image&lt;/td&gt;
-      &lt;td&gt;kage@bKAhSq/btq6fSw0lcV/6iD4PKqi8EKqozy5k12C1K/img.png&lt;/td&gt;
-      &lt;td&gt;alignCenter&lt;/td&gt;
-      &lt;td&gt;width=”100%” data-origin-width=”700” data-origin-height=”451” data-ke-mobilestyle=”widthOrigin”&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_##]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1iXAdwaqmka2bb7x5GUHlakml06MbZfJq&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1Um7KWib1S2hF51vKXDTfo2fZuYSCuUXM&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;접근방식&quot;&gt;접근방식&lt;/h3&gt;
 
@@ -452,7 +423,7 @@ def solution(progresses, speeds):
       <published>2021-06-01T05:55:00+09:00</published>
       <updated>2021-06-01T05:55:00+09:00</updated>
       <id>http://localhost:4000/algorithm1</id>
-      <content type="html" xml:base="http://localhost:4000/algorithm1">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+      <content type="html" xml:base="http://localhost:4000/algorithm1">&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1h2Q5upsjK2_sy1uHd95bcumDNYkVFXYZ&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -555,19 +526,7 @@ def solution(prices):
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[##_Image&lt;/td&gt;
-      &lt;td&gt;kage@pAwg5/btq6gBf7Ast/naCt4UD2aICyQKz1MebAl0/img.png&lt;/td&gt;
-      &lt;td&gt;alignCenter&lt;/td&gt;
-      &lt;td&gt;width=”100%” data-origin-width=”516” data-origin-height=”584” data-ke-mobilestyle=”widthOrigin”&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_##]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content>
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1I0zBts6pVvvlX8l0YZ6_S29yCpx-Y95V&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content>
 
       
       
@@ -588,7 +547,7 @@ def solution(prices):
       
 
       
-        <summary type="html">Programmers 문제 링크 바로가기</summary>
+        <summary type="html"></summary>
       
 
       

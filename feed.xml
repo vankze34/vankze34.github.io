@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-01T20:01:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vans DS Gym</title><subtitle>데이터 사이언스 훈련장</subtitle><entry><title type="html">Programmers Solution - 소수찾기</title><link href="http://localhost:4000/algorithm5" rel="alternate" type="text/html" title="Programmers Solution - 소수찾기" /><published>2021-07-08T23:20:00+09:00</published><updated>2021-07-08T23:20:00+09:00</updated><id>http://localhost:4000/algorithm5</id><content type="html" xml:base="http://localhost:4000/algorithm5">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-14T19:40:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vans DS Gym</title><subtitle>데이터 사이언스 훈련장</subtitle><entry><title type="html">Programmers Solution - 소수찾기</title><link href="http://localhost:4000/algorithm5" rel="alternate" type="text/html" title="Programmers Solution - 소수찾기" /><published>2021-07-08T23:20:00+09:00</published><updated>2021-07-08T23:20:00+09:00</updated><id>http://localhost:4000/algorithm5</id><content type="html" xml:base="http://localhost:4000/algorithm5">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -54,8 +54,7 @@
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
-&lt;!-- ![2021-07-08-algorithm4_01](http://drive.google.com/uc?export=view&amp;id=1wAht02164aCFH3Kk_u0pRLPCyZlqOFSL) --&gt;
-&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1wAht02164aCFH3Kk_u0pRLPCyZlqOFSL&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/algorithm/2021-07-08-algorithm4_01.png&quot; alt=&quot;문제설명&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;접근방식&quot;&gt;접근방식&lt;/h3&gt;
 
@@ -109,7 +108,7 @@
 &lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;best&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=14OkxW24HSeZRgqATTs0s77ce2TMTtzpF&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">Programmers Solution - 다리를 지나는 트럭</title><link href="http://localhost:4000/algorithm3" rel="alternate" type="text/html" title="Programmers Solution - 다리를 지나는 트럭" /><published>2021-06-03T10:16:00+09:00</published><updated>2021-06-03T10:16:00+09:00</updated><id>http://localhost:4000/algorithm3</id><content type="html" xml:base="http://localhost:4000/algorithm3">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/algorithm/2021-07-08-algorithm4_02.png&quot; alt=&quot;결과화면&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">Programmers Solution - 다리를 지나는 트럭</title><link href="http://localhost:4000/algorithm3" rel="alternate" type="text/html" title="Programmers Solution - 다리를 지나는 트럭" /><published>2021-06-03T10:16:00+09:00</published><updated>2021-06-03T10:16:00+09:00</updated><id>http://localhost:4000/algorithm3</id><content type="html" xml:base="http://localhost:4000/algorithm3">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -202,7 +201,8 @@
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1iXAdwaqmka2bb7x5GUHlakml06MbZfJq&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1Um7KWib1S2hF51vKXDTfo2fZuYSCuUXM&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1iXAdwaqmka2bb7x5GUHlakml06MbZfJq&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1Um7KWib1S2hF51vKXDTfo2fZuYSCuUXM&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;접근방식&quot;&gt;접근방식&lt;/h3&gt;
 
@@ -248,23 +248,11 @@ def solution(progresses, speeds):
             left[i+1] = left[i]     # 현 작업(i)을 그 다음 작업(i+2)과 비교하기 위해 i+1에 i값을 대입하여 다시 반복
 
     return answer                   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">Programmers Solution - 주식 가격</title><link href="http://localhost:4000/algorithm1" rel="alternate" type="text/html" title="Programmers Solution - 주식 가격" /><published>2021-06-01T05:55:00+09:00</published><updated>2021-06-01T05:55:00+09:00</updated><id>http://localhost:4000/algorithm1</id><content type="html" xml:base="http://localhost:4000/algorithm1">&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1h2Q5upsjK2_sy1uHd95bcumDNYkVFXYZ&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">Programmers Solution - 주식 가격</title><link href="http://localhost:4000/algorithm1" rel="alternate" type="text/html" title="Programmers Solution - 주식 가격" /><published>2021-06-01T05:55:00+09:00</published><updated>2021-06-01T05:55:00+09:00</updated><id>http://localhost:4000/algorithm1</id><content type="html" xml:base="http://localhost:4000/algorithm1">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[##_Image&lt;/td&gt;
-      &lt;td&gt;kage@3Rjeh/btq6gLQr39f/nOFWSjmvDaw1dGWui93kg0/img.png&lt;/td&gt;
-      &lt;td&gt;alignLeft&lt;/td&gt;
-      &lt;td&gt;width=”100%” data-origin-width=”700” data-origin-height=”667” data-ke-mobilestyle=”widthOrigin”&lt;/td&gt;
-      &lt;td&gt;Programmers 주식 가격&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;_##]&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1h2Q5upsjK2_sy1uHd95bcumDNYkVFXYZ&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;접근방식&quot;&gt;접근방식&lt;/h3&gt;
 
@@ -351,7 +339,7 @@ def solution(prices):
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1I0zBts6pVvvlX8l0YZ6_S29yCpx-Y95V&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html"></summary></entry><entry><title type="html">List를 Stack이나 Queue처럼 사용하기</title><link href="http://localhost:4000/python1" rel="alternate" type="text/html" title="List를 Stack이나 Queue처럼 사용하기" /><published>2021-05-18T18:43:00+09:00</published><updated>2021-05-18T18:43:00+09:00</updated><id>http://localhost:4000/python1</id><content type="html" xml:base="http://localhost:4000/python1">&lt;h3 id=&quot;stack&quot;&gt;Stack&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1I0zBts6pVvvlX8l0YZ6_S29yCpx-Y95V&quot; width=&quot;100%&quot; object-fit=&quot;contain&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">List를 Stack이나 Queue처럼 사용하기</title><link href="http://localhost:4000/python1" rel="alternate" type="text/html" title="List를 Stack이나 Queue처럼 사용하기" /><published>2021-05-18T18:43:00+09:00</published><updated>2021-05-18T18:43:00+09:00</updated><id>http://localhost:4000/python1</id><content type="html" xml:base="http://localhost:4000/python1">&lt;h3 id=&quot;stack&quot;&gt;Stack&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;stack_list = [100, 200]
 stack_list

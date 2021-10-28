@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/vankze34/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-10-28T20:10:43+09:00</updated>
+  <updated>2021-10-28T20:17:44+09:00</updated>
   <id>http://localhost:4000/author/vankze34/feed.xml</id>
 
   
@@ -92,7 +92,7 @@ array3 array 형태: (1, 3)
       
 
       
-        <category term="MachineLearning" />
+        <category term="machinelearning" />
       
 
       
@@ -128,7 +128,7 @@ array3 array 형태: (1, 3)
       
 
       
-        <category term="Docker" />
+        <category term="docker" />
       
 
       
@@ -199,7 +199,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
       
 
       
-        <category term="Docker" />
+        <category term="docker" />
       
 
       
@@ -286,7 +286,7 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
       
 
       
-        <category term="Docker" />
+        <category term="docker" />
       
 
       
@@ -332,7 +332,7 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
       
 
       
-        <category term="Docker" />
+        <category term="docker" />
       
 
       
@@ -368,7 +368,7 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
       
 
       
-        <category term="MachineLearning" />
+        <category term="machinelearning" />
       
 
       
@@ -450,7 +450,7 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
       
 
       
-        <category term="MachineLearning" />
+        <category term="machinelearning" />
       
 
       
@@ -500,7 +500,7 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
       
 
       
-        <category term="MachineLearning" />
+        <category term="machinelearning" />
       
 
       

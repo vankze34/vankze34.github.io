@@ -8,21 +8,6 @@
     
       
       <item>
-        <title>시작하기 앞서</title>
-        
-          <description>&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 28 Oct 2021 18:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/docker-0intro</link>
-        <guid isPermaLink="true">http://localhost:4000/docker-0intro</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title>
         
           <description>&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;
@@ -30,7 +15,7 @@
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/ml-ch01-03</link>
         <guid isPermaLink="true">http://localhost:4000/ml-ch01-03</guid>
@@ -46,7 +31,7 @@
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/ml-ch01-02</link>
         <guid isPermaLink="true">http://localhost:4000/ml-ch01-02</guid>
@@ -62,7 +47,7 @@
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/ml-ch01-01</link>
         <guid isPermaLink="true">http://localhost:4000/ml-ch01-01</guid>
@@ -77,7 +62,7 @@
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/ml-0intro</link>
         <guid isPermaLink="true">http://localhost:4000/ml-0intro</guid>
@@ -92,7 +77,7 @@
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/docker-ch02-02</link>
         <guid isPermaLink="true">http://localhost:4000/docker-ch02-02</guid>
@@ -107,7 +92,7 @@
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/docker-ch02-01</link>
         <guid isPermaLink="true">http://localhost:4000/docker-ch02-01</guid>
@@ -123,10 +108,25 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/docker-ch01</link>
         <guid isPermaLink="true">http://localhost:4000/docker-ch01</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>시작하기 앞서</title>
+        
+          <description>&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/docker-0intro</link>
+        <guid isPermaLink="true">http://localhost:4000/docker-0intro</guid>
       </item>
       
     
@@ -139,7 +139,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
 </description>
         
-        <pubDate>Wed, 27 Oct 2021 10:16:00 +0900</pubDate>
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/stack_queue-4</link>
         <guid isPermaLink="true">http://localhost:4000/stack_queue-4</guid>
@@ -154,7 +154,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
 </description>
         
-        <pubDate>Thu, 08 Jul 2021 23:20:00 +0900</pubDate>
+        <pubDate>Thu, 08 Jul 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/exhaustive_search-2</link>
         <guid isPermaLink="true">http://localhost:4000/exhaustive_search-2</guid>
@@ -163,13 +163,13 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
     
       
       <item>
-        <title>Programmers  Solution - 모의고사</title>
+        <title>프로그래머스 (완전탐색) - 모의고사</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 </description>
         
-        <pubDate>Thu, 08 Jul 2021 06:20:00 +0900</pubDate>
+        <pubDate>Wed, 07 Jul 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/exhaustive_search-1</link>
         <guid isPermaLink="true">http://localhost:4000/exhaustive_search-1</guid>
@@ -184,7 +184,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
 </description>
         
-        <pubDate>Thu, 03 Jun 2021 10:16:00 +0900</pubDate>
+        <pubDate>Thu, 03 Jun 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/stack_queue-3</link>
         <guid isPermaLink="true">http://localhost:4000/stack_queue-3</guid>
@@ -199,7 +199,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
 </description>
         
-        <pubDate>Wed, 02 Jun 2021 04:41:00 +0900</pubDate>
+        <pubDate>Tue, 01 Jun 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/stack_queue-2</link>
         <guid isPermaLink="true">http://localhost:4000/stack_queue-2</guid>
@@ -214,7 +214,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
 </description>
         
-        <pubDate>Tue, 01 Jun 2021 05:55:00 +0900</pubDate>
+        <pubDate>Mon, 31 May 2021 00:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/stack_queue-1</link>
         <guid isPermaLink="true">http://localhost:4000/stack_queue-1</guid>

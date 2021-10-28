@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-28T20:36:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vans DS Gym</title><subtitle>데이터 사이언스 훈련장</subtitle><entry><title type="html">시작하기 앞서</title><link href="http://localhost:4000/docker-0intro" rel="alternate" type="text/html" title="시작하기 앞서" /><published>2021-10-28T18:00:00+09:00</published><updated>2021-10-28T18:00:00+09:00</updated><id>http://localhost:4000/docker-0intro</id><content type="html" xml:base="http://localhost:4000/docker-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/book.png&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">이 글은 시작하세요! 도커/쿠버네티스 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary></entry><entry><title type="html">2. 도커 엔진 (1)</title><link href="http://localhost:4000/docker-ch02-01" rel="alternate" type="text/html" title="2. 도커 엔진 (1)" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/docker-ch02-01</id><content type="html" xml:base="http://localhost:4000/docker-ch02-01">&lt;h2 id=&quot;21-도커-이미지와-컨테이너&quot;&gt;2.1 도커 이미지와 컨테이너&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-28T21:11:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vans DS Gym</title><subtitle>데이터 사이언스 훈련장</subtitle><entry><title type="html">2. 도커 엔진 (1)</title><link href="http://localhost:4000/docker-ch02-01" rel="alternate" type="text/html" title="2. 도커 엔진 (1)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-ch02-01</id><content type="html" xml:base="http://localhost:4000/docker-ch02-01">&lt;h2 id=&quot;21-도커-이미지와-컨테이너&quot;&gt;2.1 도커 이미지와 컨테이너&lt;/h2&gt;
 
 &lt;p&gt;도커 엔진에서 사용하는 기본 단위는 ‘이미지’와 ‘컨테이너’이다.&lt;/p&gt;
 
@@ -53,7 +51,7 @@ Docker version xx.xx.x build abcdefgh
 &lt;/ol&gt;
 
 &lt;p&gt;exit: 컨테이너 정지 후 나가기
-Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">2.1 도커 이미지와 컨테이너</summary></entry><entry><title type="html">2. 도커 엔진 (2)</title><link href="http://localhost:4000/docker-ch02-02" rel="alternate" type="text/html" title="2. 도커 엔진 (2)" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/docker-ch02-02</id><content type="html" xml:base="http://localhost:4000/docker-ch02-02">&lt;h2 id=&quot;22-도커-컨테이너-다루기&quot;&gt;2.2 도커 컨테이너 다루기&lt;/h2&gt;
+Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">2.1 도커 이미지와 컨테이너</summary></entry><entry><title type="html">2. 도커 엔진 (2)</title><link href="http://localhost:4000/docker-ch02-02" rel="alternate" type="text/html" title="2. 도커 엔진 (2)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-ch02-02</id><content type="html" xml:base="http://localhost:4000/docker-ch02-02">&lt;h2 id=&quot;22-도커-컨테이너-다루기&quot;&gt;2.2 도커 컨테이너 다루기&lt;/h2&gt;
 
 &lt;h3 id=&quot;224-컨테이너를-외부에-노출&quot;&gt;2.2.4 컨테이너를 외부에 노출&lt;/h3&gt;
 
@@ -65,9 +63,9 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content><author><
 &lt;p&gt;하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# docker run -i -t --name mywebserver -p 80:80 ubuntu:14.04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">2.2 도커 컨테이너 다루기</summary></entry><entry><title type="html">시작하기 앞서</title><link href="http://localhost:4000/ml-0intro" rel="alternate" type="text/html" title="시작하기 앞서" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/ml-0intro</id><content type="html" xml:base="http://localhost:4000/ml-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/pymldg-rev/&quot;&gt;파이썬 머신러닝 완벽가이드&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">2.2 도커 컨테이너 다루기</summary></entry><entry><title type="html">시작하기 앞서</title><link href="http://localhost:4000/ml-0intro" rel="alternate" type="text/html" title="시작하기 앞서" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-0intro</id><content type="html" xml:base="http://localhost:4000/ml-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/pymldg-rev/&quot;&gt;파이썬 머신러닝 완벽가이드&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/built/images/ml/2021-10-28-ml-intro-book.jpg&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">이 글은 파이썬 머신러닝 완벽가이드 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)</title><link href="http://localhost:4000/ml-ch01-01" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-01</id><content type="html" xml:base="http://localhost:4000/ml-ch01-01">&lt;h3 id=&quot;01-머신러닝의-개념&quot;&gt;01. 머신러닝의 개념&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/ml/2021-10-28-ml-intro-book.jpg&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">이 글은 파이썬 머신러닝 완벽가이드 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)</title><link href="http://localhost:4000/ml-ch01-01" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-01</id><content type="html" xml:base="http://localhost:4000/ml-ch01-01">&lt;h3 id=&quot;01-머신러닝의-개념&quot;&gt;01. 머신러닝의 개념&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;blockquote&gt;
@@ -115,7 +113,7 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content><author><
 
 &lt;p&gt;고 말하고 있다.&lt;/p&gt;
 
-&lt;p&gt;뛰어난 성능의 머신러닝 기법 중 하나인 딥러닝의 프레임워크들이 파이썬 우선 정책으로 지원받고 있기 때문에 앞으로는 파이썬을 중심으로 머신러닝은 계속 발전할 것이다.&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">01. 머신러닝의 개념</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</title><link href="http://localhost:4000/ml-ch01-02" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-02</id><content type="html" xml:base="http://localhost:4000/ml-ch01-02">&lt;h2 id=&quot;02-파이썬-머신러닝-생태계를-구성하는-주요-패키지&quot;&gt;02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지&lt;/h2&gt;
+&lt;p&gt;뛰어난 성능의 머신러닝 기법 중 하나인 딥러닝의 프레임워크들이 파이썬 우선 정책으로 지원받고 있기 때문에 앞으로는 파이썬을 중심으로 머신러닝은 계속 발전할 것이다.&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">01. 머신러닝의 개념</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</title><link href="http://localhost:4000/ml-ch01-02" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-02</id><content type="html" xml:base="http://localhost:4000/ml-ch01-02">&lt;h2 id=&quot;02-파이썬-머신러닝-생태계를-구성하는-주요-패키지&quot;&gt;02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지&lt;/h2&gt;
 &lt;hr /&gt;
 
 &lt;ul&gt;
@@ -131,82 +129,9 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content><author><
   &lt;li&gt;Anaconda&lt;/li&gt;
   &lt;li&gt;파이썬 3.6이상&lt;/li&gt;
   &lt;li&gt;Visual Studio Code&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title><link href="http://localhost:4000/ml-ch01-03" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-03</id><content type="html" xml:base="http://localhost:4000/ml-ch01-03">&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;
-&lt;hr /&gt;
+&lt;/ul&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지</summary></entry><entry><title type="html">시작하기 앞서</title><link href="http://localhost:4000/docker-0intro" rel="alternate" type="text/html" title="시작하기 앞서" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-0intro</id><content type="html" xml:base="http://localhost:4000/docker-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
 
-&lt;p&gt;넘파이(Numpy)는 머신러닝의 주요 알고리즘인 선형대수와 통계 기반 프로그램을 쉽게 작성 가능하도록 지원한다. 또한 C/C++ 등 Low Level 언어 기반의 호환 API를 제공한다.&lt;/p&gt;
-
-&lt;p&gt;넘파이는 배열 기반의 연산은 물론 다양한 데이터 핸들링 기능을 제공한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;넘파이-ndarray-개요&quot;&gt;넘파이 ndarray 개요&lt;/h3&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# numpy 모듈 import
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-                  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array2 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array2 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array3 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array3 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[output]
-array1 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
-array1 array 형태: (3,)
-array2 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
-array2 array 형태: (2, 3)
-array3 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
-array3 array 형태: (1, 3)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1: {:0}차원, array2: {:1}차원, array3: {:2}차원&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">03. 넘파이</summary></entry><entry><title type="html">1. 도커란?</title><link href="http://localhost:4000/docker-ch01" rel="alternate" type="text/html" title="1. 도커란?" /><published>2021-10-27T18:00:00+09:00</published><updated>2021-10-27T18:00:00+09:00</updated><id>http://localhost:4000/docker-ch01</id><content type="html" xml:base="http://localhost:4000/docker-ch01">&lt;p&gt;도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다.
-Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.&lt;/p&gt;
-
-&lt;h2 id=&quot;11-가상-머신과-도커-컨테이너&quot;&gt;1.1 가상 머신과 도커 컨테이너&lt;/h2&gt;
-
-&lt;p&gt;기존의 가상머신은 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80&quot;&gt;하이퍼바이저&lt;/a&gt; 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에 성능 손실이 발생한다. 또한 배포를 위한 이미지를 생성하는 경우에 크기가 크다. 그러므로 가상머신 이미지를 애플리케이션으로 배포하기에는 부담스럽다.&lt;/p&gt;
-
-&lt;p&gt;이런 문제를 해결 가능한 도커는 컨테이너라는 가상화 공간을 생성하기 위해 리눅스 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용함으로 프로세스 단위의 격리 환경을 만들어 성능 손실이 거의 없다. 호스트의 커널을 공유하여 사용하고 애플리케이션을 구동하는데 필요한 라이브러리 및 실행파일만 컨테이너에 포함하고 있기 때문에 이미지 용량 또한 타 가상머신에 비해 작다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_1_1.png&quot; alt=&quot;그림 1.1&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;12-도커를-시작해야-하는-이유&quot;&gt;1.2 도커를 시작해야 하는 이유&lt;/h2&gt;
-
-&lt;h3 id=&quot;121-애플리케이션-개발과-배포가-편해진다&quot;&gt;1.2.1 애플리케이션 개발과 배포가 편해진다&lt;/h3&gt;
-
-&lt;p&gt;도커 컨테이너 내부에서 소프트웨어를 설치하고 설정파일을 수정해도 호스트 OS에는 영향이 없다. 독립된 개발 환경을 보장 받는다는 것이다.&lt;/p&gt;
-
-&lt;p&gt;컨테이너 내부에서 작업 후 운영환경에 배포할 경우, ‘도커 이미지’만 패키지로 만들어 전달하기만 하면 된다. 패키지나 라이브러리 설치가 필요없다.&lt;/p&gt;
-
-&lt;h3 id=&quot;122-여러-애플리케이션의-독립성과-확장성이-높아진다&quot;&gt;1.2.2 여러 애플리케이션의 독립성과 확장성이 높아진다&lt;/h3&gt;
-
-&lt;p&gt;최근에 새롭게 떠오르는 서비스 방식인 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4&quot;&gt;마이크로서비스&lt;/a&gt; 구조는 여러 모듈을 독립된 형태로 구성하기 때문에 언어에 종속되지 않고 각 모듈 관리가 쉬워진다.&lt;/p&gt;
-
-&lt;p&gt;컨테이너는 마이크로서비스 구조에서 가장 많이 사용되고 있는 가상화 기술이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_1_2.png&quot; alt=&quot;그림 1.2&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;13-도커-엔진-설치&quot;&gt;1.3 도커 엔진 설치&lt;/h2&gt;
-
-&lt;h3 id=&quot;131-도커엔진의-종류-및-버전&quot;&gt;1.3.1 도커엔진의 종류 및 버전&lt;/h3&gt;
-
-&lt;p&gt;도커엔진은 도커EE(Docker Enterprise Edition)와 도커CE(Community Edition)으로 구분되어 제공된다. 도커EE는 유료 기업용 솔루션이며, 각종 기술 지원 및 실제 서비스 단계에서 필요한 부가 기능을 함께 제공한다. 도커CE는 별도의 기술 지원 및 서비스를 제공하지 않고 핵심적인 기능만 사용 가능하며 무료이다.&lt;/p&gt;
-
-&lt;p&gt;이 책에서는 도커CE를 기준으로 설명한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;132---134-운영체제별-도커-설치&quot;&gt;1.3.2 - 1.3.4 운영체제별 도커 설치&lt;/h3&gt;
-
-&lt;p&gt;운영체제별 설치 방법 참조: &lt;a href=&quot;https://docs.docker.com/get-docker/&quot;&gt;docker docs&lt;/a&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.</summary></entry><entry><title type="html">프로그래머스 (스택/큐) - 프린터</title><link href="http://localhost:4000/stack_queue-4" rel="alternate" type="text/html" title="프로그래머스 (스택/큐) - 프린터" /><published>2021-10-27T10:16:00+09:00</published><updated>2021-10-27T10:16:00+09:00</updated><id>http://localhost:4000/stack_queue-4</id><content type="html" xml:base="http://localhost:4000/stack_queue-4">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/book.png&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">이 글은 시작하세요! 도커/쿠버네티스 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary></entry><entry><title type="html">프로그래머스 (스택/큐) - 프린터</title><link href="http://localhost:4000/stack_queue-4" rel="alternate" type="text/html" title="프로그래머스 (스택/큐) - 프린터" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/stack_queue-4</id><content type="html" xml:base="http://localhost:4000/stack_queue-4">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42587&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;details&gt;
@@ -306,7 +231,82 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
             &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
 
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out_order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">문제 Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">프로그래머스 (완전탐색) - 소수찾기</title><link href="http://localhost:4000/exhaustive_search-2" rel="alternate" type="text/html" title="프로그래머스 (완전탐색) - 소수찾기" /><published>2021-07-08T23:20:00+09:00</published><updated>2021-07-08T23:20:00+09:00</updated><id>http://localhost:4000/exhaustive_search-2</id><content type="html" xml:base="http://localhost:4000/exhaustive_search-2">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">문제 Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title><link href="http://localhost:4000/ml-ch01-03" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-03</id><content type="html" xml:base="http://localhost:4000/ml-ch01-03">&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;넘파이(Numpy)는 머신러닝의 주요 알고리즘인 선형대수와 통계 기반 프로그램을 쉽게 작성 가능하도록 지원한다. 또한 C/C++ 등 Low Level 언어 기반의 호환 API를 제공한다.&lt;/p&gt;
+
+&lt;p&gt;넘파이는 배열 기반의 연산은 물론 다양한 데이터 핸들링 기능을 제공한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;넘파이-ndarray-개요&quot;&gt;넘파이 ndarray 개요&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# numpy 모듈 import
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array2 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array2 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array3 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array3 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[output]
+array1 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
+array1 array 형태: (3,)
+array2 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
+array2 array 형태: (2, 3)
+array3 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
+array3 array 형태: (1, 3)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1: {:0}차원, array2: {:1}차원, array3: {:2}차원&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">03. 넘파이</summary></entry><entry><title type="html">1. 도커란?</title><link href="http://localhost:4000/docker-ch01" rel="alternate" type="text/html" title="1. 도커란?" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-ch01</id><content type="html" xml:base="http://localhost:4000/docker-ch01">&lt;p&gt;도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다.
+Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.&lt;/p&gt;
+
+&lt;h2 id=&quot;11-가상-머신과-도커-컨테이너&quot;&gt;1.1 가상 머신과 도커 컨테이너&lt;/h2&gt;
+
+&lt;p&gt;기존의 가상머신은 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80&quot;&gt;하이퍼바이저&lt;/a&gt; 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에 성능 손실이 발생한다. 또한 배포를 위한 이미지를 생성하는 경우에 크기가 크다. 그러므로 가상머신 이미지를 애플리케이션으로 배포하기에는 부담스럽다.&lt;/p&gt;
+
+&lt;p&gt;이런 문제를 해결 가능한 도커는 컨테이너라는 가상화 공간을 생성하기 위해 리눅스 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용함으로 프로세스 단위의 격리 환경을 만들어 성능 손실이 거의 없다. 호스트의 커널을 공유하여 사용하고 애플리케이션을 구동하는데 필요한 라이브러리 및 실행파일만 컨테이너에 포함하고 있기 때문에 이미지 용량 또한 타 가상머신에 비해 작다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_1_1.png&quot; alt=&quot;그림 1.1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;12-도커를-시작해야-하는-이유&quot;&gt;1.2 도커를 시작해야 하는 이유&lt;/h2&gt;
+
+&lt;h3 id=&quot;121-애플리케이션-개발과-배포가-편해진다&quot;&gt;1.2.1 애플리케이션 개발과 배포가 편해진다&lt;/h3&gt;
+
+&lt;p&gt;도커 컨테이너 내부에서 소프트웨어를 설치하고 설정파일을 수정해도 호스트 OS에는 영향이 없다. 독립된 개발 환경을 보장 받는다는 것이다.&lt;/p&gt;
+
+&lt;p&gt;컨테이너 내부에서 작업 후 운영환경에 배포할 경우, ‘도커 이미지’만 패키지로 만들어 전달하기만 하면 된다. 패키지나 라이브러리 설치가 필요없다.&lt;/p&gt;
+
+&lt;h3 id=&quot;122-여러-애플리케이션의-독립성과-확장성이-높아진다&quot;&gt;1.2.2 여러 애플리케이션의 독립성과 확장성이 높아진다&lt;/h3&gt;
+
+&lt;p&gt;최근에 새롭게 떠오르는 서비스 방식인 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4&quot;&gt;마이크로서비스&lt;/a&gt; 구조는 여러 모듈을 독립된 형태로 구성하기 때문에 언어에 종속되지 않고 각 모듈 관리가 쉬워진다.&lt;/p&gt;
+
+&lt;p&gt;컨테이너는 마이크로서비스 구조에서 가장 많이 사용되고 있는 가상화 기술이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_1_2.png&quot; alt=&quot;그림 1.2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;13-도커-엔진-설치&quot;&gt;1.3 도커 엔진 설치&lt;/h2&gt;
+
+&lt;h3 id=&quot;131-도커엔진의-종류-및-버전&quot;&gt;1.3.1 도커엔진의 종류 및 버전&lt;/h3&gt;
+
+&lt;p&gt;도커엔진은 도커EE(Docker Enterprise Edition)와 도커CE(Community Edition)으로 구분되어 제공된다. 도커EE는 유료 기업용 솔루션이며, 각종 기술 지원 및 실제 서비스 단계에서 필요한 부가 기능을 함께 제공한다. 도커CE는 별도의 기술 지원 및 서비스를 제공하지 않고 핵심적인 기능만 사용 가능하며 무료이다.&lt;/p&gt;
+
+&lt;p&gt;이 책에서는 도커CE를 기준으로 설명한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;132---134-운영체제별-도커-설치&quot;&gt;1.3.2 - 1.3.4 운영체제별 도커 설치&lt;/h3&gt;
+
+&lt;p&gt;운영체제별 설치 방법 참조: &lt;a href=&quot;https://docs.docker.com/get-docker/&quot;&gt;docker docs&lt;/a&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.</summary></entry><entry><title type="html">프로그래머스 (완전탐색) - 소수찾기</title><link href="http://localhost:4000/exhaustive_search-2" rel="alternate" type="text/html" title="프로그래머스 (완전탐색) - 소수찾기" /><published>2021-07-08T00:00:00+09:00</published><updated>2021-07-08T00:00:00+09:00</updated><id>http://localhost:4000/exhaustive_search-2</id><content type="html" xml:base="http://localhost:4000/exhaustive_search-2">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 

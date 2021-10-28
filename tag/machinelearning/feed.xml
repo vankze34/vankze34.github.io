@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/machinelearning/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-10-28T20:36:35+09:00</updated>
+  <updated>2021-10-28T21:11:16+09:00</updated>
   <id>http://localhost:4000/tag/machinelearning/feed.xml</id>
 
   
@@ -34,8 +34,8 @@
     <entry>
       <title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title>
       <link href="http://localhost:4000/ml-ch01-03" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/ml-ch01-03</id>
       <content type="html" xml:base="http://localhost:4000/ml-ch01-03">&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;
 &lt;hr /&gt;
@@ -106,8 +106,8 @@ array3 array 형태: (1, 3)
     <entry>
       <title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</title>
       <link href="http://localhost:4000/ml-ch01-02" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/ml-ch01-02</id>
       <content type="html" xml:base="http://localhost:4000/ml-ch01-02">&lt;h2 id=&quot;02-파이썬-머신러닝-생태계를-구성하는-주요-패키지&quot;&gt;02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지&lt;/h2&gt;
 &lt;hr /&gt;
@@ -156,8 +156,8 @@ array3 array 형태: (1, 3)
     <entry>
       <title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)</title>
       <link href="http://localhost:4000/ml-ch01-01" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/ml-ch01-01</id>
       <content type="html" xml:base="http://localhost:4000/ml-ch01-01">&lt;h3 id=&quot;01-머신러닝의-개념&quot;&gt;01. 머신러닝의 개념&lt;/h3&gt;
 &lt;hr /&gt;
@@ -238,8 +238,8 @@ array3 array 형태: (1, 3)
     <entry>
       <title type="html">시작하기 앞서</title>
       <link href="http://localhost:4000/ml-0intro" rel="alternate" type="text/html" title="시작하기 앞서" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/ml-0intro</id>
       <content type="html" xml:base="http://localhost:4000/ml-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/pymldg-rev/&quot;&gt;파이썬 머신러닝 완벽가이드&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
 

@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/docker/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-10-28T20:36:35+09:00</updated>
+  <updated>2021-10-28T21:11:16+09:00</updated>
   <id>http://localhost:4000/tag/docker/feed.xml</id>
 
   
@@ -32,46 +32,10 @@
 
   
     <entry>
-      <title type="html">시작하기 앞서</title>
-      <link href="http://localhost:4000/docker-0intro" rel="alternate" type="text/html" title="시작하기 앞서" />
-      <published>2021-10-28T18:00:00+09:00</published>
-      <updated>2021-10-28T18:00:00+09:00</updated>
-      <id>http://localhost:4000/docker-0intro</id>
-      <content type="html" xml:base="http://localhost:4000/docker-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/book.png&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Jaekwang Van</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="docker" />
-      
-
-      
-        <summary type="html">이 글은 시작하세요! 도커/쿠버네티스 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">2. 도커 엔진 (2)</title>
       <link href="http://localhost:4000/docker-ch02-02" rel="alternate" type="text/html" title="2. 도커 엔진 (2)" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/docker-ch02-02</id>
       <content type="html" xml:base="http://localhost:4000/docker-ch02-02">&lt;h2 id=&quot;22-도커-컨테이너-다루기&quot;&gt;2.2 도커 컨테이너 다루기&lt;/h2&gt;
 
@@ -116,8 +80,8 @@
     <entry>
       <title type="html">2. 도커 엔진 (1)</title>
       <link href="http://localhost:4000/docker-ch02-01" rel="alternate" type="text/html" title="2. 도커 엔진 (1)" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/docker-ch02-01</id>
       <content type="html" xml:base="http://localhost:4000/docker-ch02-01">&lt;h2 id=&quot;21-도커-이미지와-컨테이너&quot;&gt;2.1 도커 이미지와 컨테이너&lt;/h2&gt;
 
@@ -203,8 +167,8 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
     <entry>
       <title type="html">1. 도커란?</title>
       <link href="http://localhost:4000/docker-ch01" rel="alternate" type="text/html" title="1. 도커란?" />
-      <published>2021-10-27T18:00:00+09:00</published>
-      <updated>2021-10-27T18:00:00+09:00</updated>
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
       <id>http://localhost:4000/docker-ch01</id>
       <content type="html" xml:base="http://localhost:4000/docker-ch01">&lt;p&gt;도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다.
 Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.&lt;/p&gt;
@@ -265,6 +229,42 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
 
       
         <summary type="html">도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">시작하기 앞서</title>
+      <link href="http://localhost:4000/docker-0intro" rel="alternate" type="text/html" title="시작하기 앞서" />
+      <published>2021-10-28T00:00:00+09:00</published>
+      <updated>2021-10-28T00:00:00+09:00</updated>
+      <id>http://localhost:4000/docker-0intro</id>
+      <content type="html" xml:base="http://localhost:4000/docker-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/book.png&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="docker" />
+      
+
+      
+        <summary type="html">이 글은 시작하세요! 도커/쿠버네티스 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary>
       
 
       

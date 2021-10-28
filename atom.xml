@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>시작하기 앞서</title>
+        
+          <description>&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 28 Oct 2021 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/docker-0intro</link>
+        <guid isPermaLink="true">http://localhost:4000/docker-0intro</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title>
         
           <description>&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;
@@ -117,22 +132,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
     
       
       <item>
-        <title>시작하기 앞서</title>
-        
-          <description>&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Wed, 27 Oct 2021 18:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/docker-0intro</link>
-        <guid isPermaLink="true">http://localhost:4000/docker-0intro</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Programmers  Solution - 프린터</title>
+        <title>프로그래머스 (스택/큐) - 프린터</title>
         
           <description>&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42587&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
@@ -148,7 +148,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
     
       
       <item>
-        <title>Programmers  Solution - 소수찾기</title>
+        <title>프로그래머스 (완전탐색) - 소수찾기</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
@@ -178,7 +178,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
     
       
       <item>
-        <title>Programmers  Solution - 다리를 지나는 트럭</title>
+        <title>프로그래머스 (스택/큐) - 다리를 지나는 트럭</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
@@ -193,7 +193,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
     
       
       <item>
-        <title>Programmers  Solution - 기능개발</title>
+        <title>프로그래머스 (스택/큐) - 기능개발</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42586&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
@@ -208,7 +208,7 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
     
       
       <item>
-        <title>Programmers  Solution - 주식 가격</title>
+        <title>프로그래머스 (스택/큐) - 주식 가격</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 

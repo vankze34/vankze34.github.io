@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-09-14T19:40:25+09:00</updated>
+  <updated>2021-10-28T17:13:38+09:00</updated>
   <id>http://localhost:4000/tag/algorithm/feed.xml</id>
 
   
@@ -32,12 +32,113 @@
 
   
     <entry>
+      <title type="html">Programmers Solution - 프린터</title>
+      <link href="http://localhost:4000/stack_queue-4" rel="alternate" type="text/html" title="Programmers  Solution - 프린터" />
+      <published>2021-10-27T10:16:00+09:00</published>
+      <updated>2021-10-27T10:16:00+09:00</updated>
+      <id>http://localhost:4000/stack_queue-4</id>
+      <content type="html" xml:base="http://localhost:4000/stack_queue-4">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42587&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;접기/펼치기&lt;/summary&gt;
+
+  &lt;h4 id=&quot;section&quot;&gt;설명&lt;/h4&gt;
+  &lt;p&gt;일반적인 프린터는 인쇄 요청이 들어온 순서대로 인쇄합니다. 그렇기 때문에 중요한 문서가 나중에 인쇄될 수 있습니다. 이런 문제를 보완하기 위해 중요도가 높은 문서를 먼저 인쇄하는 프린터를 개발했습니다. 이 새롭게 개발한 프린터는 아래와 같은 방식으로 인쇄 작업을 수행합니다.&lt;/p&gt;
+
+  &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 인쇄 대기목록의 가장 앞에 있는 문서(J)를 대기목록에서 꺼냅니다.
+2. 나머지 인쇄 대기목록에서 J보다 중요도가 높은 문서가 한 개라도 존재하면 J를 대기목록의 가장 마지막에 넣습니다.
+3. 그렇지 않으면 J를 인쇄합니다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;예를 들어, 4개의 문서(A, B, C, D)가 순서대로 인쇄 대기목록에 있고 중요도가 2 1 3 2 라면 C D A B 순으로 인쇄하게 됩니다.&lt;/p&gt;
+
+  &lt;p&gt;내가 인쇄를 요청한 문서가 몇 번째로 인쇄되는지 알고 싶습니다. 위의 예에서 C는 1번째로, A는 3번째로 인쇄됩니다.&lt;/p&gt;
+
+  &lt;p&gt;현재 대기목록에 있는 문서의 중요도가 순서대로 담긴 배열 priorities와 내가 인쇄를 요청한 문서가 현재 대기목록의 어떤 위치에 있는지를 알려주는 location이 매개변수로 주어질 때, 내가 인쇄를 요청한 문서가 몇 번째로 인쇄되는지 return 하도록 solution 함수를 작성해주세요.&lt;/p&gt;
+
+  &lt;h4 id=&quot;section-1&quot;&gt;제한사항&lt;/h4&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;현재 대기목록에는 1개 이상 100개 이하의 문서가 있습니다.&lt;/li&gt;
+    &lt;li&gt;인쇄 작업의 중요도는 1~9로 표현하며 숫자가 클수록 중요하다는 뜻입니다.&lt;/li&gt;
+    &lt;li&gt;location은 0 이상 (현재 대기목록에 있는 작업 수 - 1) 이하의 값을 가지며 대기목록의 가장 앞에 있으면 0, 두 번째에 있으면 1로 표현합니다.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h4 id=&quot;section-2&quot;&gt;입출력 예&lt;/h4&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;priorities&lt;/th&gt;
+        &lt;th&gt;location&lt;/th&gt;
+        &lt;th&gt;return&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;[2, 1, 3, 2]&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;[1, 1, 9, 1, 1, 1]&lt;/td&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h4 id=&quot;section-3&quot;&gt;입출력 예 설명&lt;/h4&gt;
+
+  &lt;p&gt;예제 #1&lt;/p&gt;
+
+  &lt;p&gt;문제에 나온 예와 같습니다.&lt;/p&gt;
+
+  &lt;p&gt;예제 #2&lt;/p&gt;
+
+  &lt;p&gt;6개의 문서(A, B, C, D, E, F)가 인쇄 대기목록에 있고 중요도가 1 1 9 1 1 1 이므로 C D E F A B 순으로 인쇄합니다.&lt;/p&gt;
+
+&lt;/details&gt;
+
+&lt;h2 id=&quot;접근방식&quot;&gt;접근방식&lt;/h2&gt;
+
+&lt;h2 id=&quot;알고리즘&quot;&gt;알고리즘&lt;/h2&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Programmers 문제 링크 바로가기</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Programmers Solution - 소수찾기</title>
-      <link href="http://localhost:4000/algorithm5" rel="alternate" type="text/html" title="Programmers  Solution - 소수찾기" />
+      <link href="http://localhost:4000/exhaustive_search-2" rel="alternate" type="text/html" title="Programmers  Solution - 소수찾기" />
       <published>2021-07-08T23:20:00+09:00</published>
       <updated>2021-07-08T23:20:00+09:00</updated>
-      <id>http://localhost:4000/algorithm5</id>
-      <content type="html" xml:base="http://localhost:4000/algorithm5">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+      <id>http://localhost:4000/exhaustive_search-2</id>
+      <content type="html" xml:base="http://localhost:4000/exhaustive_search-2">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -119,11 +220,11 @@
   
     <entry>
       <title type="html">Programmers Solution - 모의고사</title>
-      <link href="http://localhost:4000/algorithm4" rel="alternate" type="text/html" title="Programmers  Solution - 모의고사" />
+      <link href="http://localhost:4000/exhaustive_search-1" rel="alternate" type="text/html" title="Programmers  Solution - 모의고사" />
       <published>2021-07-08T06:20:00+09:00</published>
       <updated>2021-07-08T06:20:00+09:00</updated>
-      <id>http://localhost:4000/algorithm4</id>
-      <content type="html" xml:base="http://localhost:4000/algorithm4">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+      <id>http://localhost:4000/exhaustive_search-1</id>
+      <content type="html" xml:base="http://localhost:4000/exhaustive_search-1">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -211,11 +312,11 @@
   
     <entry>
       <title type="html">Programmers Solution - 다리를 지나는 트럭</title>
-      <link href="http://localhost:4000/algorithm3" rel="alternate" type="text/html" title="Programmers  Solution - 다리를 지나는 트럭" />
+      <link href="http://localhost:4000/stack_queue-3" rel="alternate" type="text/html" title="Programmers  Solution - 다리를 지나는 트럭" />
       <published>2021-06-03T10:16:00+09:00</published>
       <updated>2021-06-03T10:16:00+09:00</updated>
-      <id>http://localhost:4000/algorithm3</id>
-      <content type="html" xml:base="http://localhost:4000/algorithm3">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+      <id>http://localhost:4000/stack_queue-3</id>
+      <content type="html" xml:base="http://localhost:4000/stack_queue-3">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -334,11 +435,11 @@
   
     <entry>
       <title type="html">Programmers Solution - 기능개발</title>
-      <link href="http://localhost:4000/algorithm2" rel="alternate" type="text/html" title="Programmers  Solution - 기능개발" />
+      <link href="http://localhost:4000/stack_queue-2" rel="alternate" type="text/html" title="Programmers  Solution - 기능개발" />
       <published>2021-06-02T04:41:00+09:00</published>
       <updated>2021-06-02T04:41:00+09:00</updated>
-      <id>http://localhost:4000/algorithm2</id>
-      <content type="html" xml:base="http://localhost:4000/algorithm2">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42586&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+      <id>http://localhost:4000/stack_queue-2</id>
+      <content type="html" xml:base="http://localhost:4000/stack_queue-2">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42586&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 
@@ -419,11 +520,11 @@ def solution(progresses, speeds):
   
     <entry>
       <title type="html">Programmers Solution - 주식 가격</title>
-      <link href="http://localhost:4000/algorithm1" rel="alternate" type="text/html" title="Programmers  Solution - 주식 가격" />
+      <link href="http://localhost:4000/stack_queue-1" rel="alternate" type="text/html" title="Programmers  Solution - 주식 가격" />
       <published>2021-06-01T05:55:00+09:00</published>
       <updated>2021-06-01T05:55:00+09:00</updated>
-      <id>http://localhost:4000/algorithm1</id>
-      <content type="html" xml:base="http://localhost:4000/algorithm1">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
+      <id>http://localhost:4000/stack_queue-1</id>
+      <content type="html" xml:base="http://localhost:4000/stack_queue-1">&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
 

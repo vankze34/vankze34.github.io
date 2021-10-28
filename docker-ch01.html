@@ -11,7 +11,7 @@
 
 
 
-    <title>List를 Stack이나 Queue처럼 사용하기</title>
+    <title>1. 도커란?</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,108 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="데이터 사이언스 훈련장" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/python1" />
+    <link rel="canonical" href="http://localhost:4000/docker-ch01" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Vans DS Gym" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="List를 Stack이나 Queue처럼 사용하기" />
-    <meta property="og:description" content="Stack
-
-stack_list = [100, 200]
-stack_list
-
-
-[100, 200]
-
-stack_list.append(300)
-stack_list
-
-
-[100, 200, 300]
-
-stack_list.pop()
-stack_list
-
-
-[100, 200]
-
-Queue
-
-queue_list = ['a', 'b']
-queue_list
-
-
-[‘a’, ‘b’]
-
-queue_list.append('c')
-queue_list
-
-
-[‘a’, ‘b’, ‘c’]
-
-queue_list.pop(0)
-queue_list
-
-
-[‘b’, ‘c’]
-" />
-    <meta property="og:url" content="http://localhost:4000/python1" />
+    <meta property="og:title" content="1. 도커란?" />
+    <meta property="og:description" content="도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다. 1.1 가상 머신과 도커 컨테이너 기존의 가상머신은 하이퍼바이저 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에" />
+    <meta property="og:url" content="http://localhost:4000/docker-ch01" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-05-18T18:43:00+09:00" />
-    <meta property="article:modified_time" content="2021-05-18T18:43:00+09:00" />
-    <meta property="article:tag" content="Python" />
+    <meta property="article:published_time" content="2021-10-27T18:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-10-27T18:00:00+09:00" />
+    <meta property="article:tag" content="Docker" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="List를 Stack이나 Queue처럼 사용하기" />
-    <meta name="twitter:description" content="Stack
-
-stack_list = [100, 200]
-stack_list
-
-
-[100, 200]
-
-stack_list.append(300)
-stack_list
-
-
-[100, 200, 300]
-
-stack_list.pop()
-stack_list
-
-
-[100, 200]
-
-Queue
-
-queue_list = ['a', 'b']
-queue_list
-
-
-[‘a’, ‘b’]
-
-queue_list.append('c')
-queue_list
-
-
-[‘a’, ‘b’, ‘c’]
-
-queue_list.pop(0)
-queue_list
-
-
-[‘b’, ‘c’]
-" />
+    <meta name="twitter:title" content="1. 도커란?" />
+    <meta name="twitter:description" content="도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다. 1.1 가상 머신과 도커 컨테이너 기존의 가상머신은 하이퍼바이저 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Vans DS Gym" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Python" />
+    <meta name="twitter:data2" content="Docker" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -152,7 +74,7 @@ queue_list
         "name": "Vans DS Gym",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/python1",
+    "url": "http://localhost:4000/docker-ch01",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/blog-cover1.png",
@@ -161,48 +83,9 @@ queue_list
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/python1"
+        "@id": "http://localhost:4000/docker-ch01"
     },
-    "description": "Stack
-
-stack_list = [100, 200]
-stack_list
-
-
-[100, 200]
-
-stack_list.append(300)
-stack_list
-
-
-[100, 200, 300]
-
-stack_list.pop()
-stack_list
-
-
-[100, 200]
-
-Queue
-
-queue_list = ['a', 'b']
-queue_list
-
-
-[‘a’, ‘b’]
-
-queue_list.append('c')
-queue_list
-
-
-[‘a’, ‘b’, ‘c’]
-
-queue_list.pop(0)
-queue_list
-
-
-[‘b’, ‘c’]
-"
+    "description": "도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다. 1.1 가상 머신과 도커 컨테이너 기존의 가상머신은 하이퍼바이저 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에"
 }
     </script>
 
@@ -215,7 +98,7 @@ queue_list
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="List를 Stack이나 Queue처럼 사용하기" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="1. 도커란?" href="/feed.xml" />
 
 
 </head>
@@ -274,21 +157,21 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-python post tag-python no-image">
+        <article class="post-full  tag-docker post tag-docker no-image">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="18 May 2021">18 May 2021</time>
+                    <time class="post-full-meta-date" datetime="27 October 2021">27 October 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/python/'>PYTHON</a>
+                               <a href='/tag/docker/'>DOCKER</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">List를 Stack이나 Queue처럼 사용하기</h1>
+                <h1 class="post-full-title">1. 도커란?</h1>
             </header>
 
             <!--
@@ -297,45 +180,45 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h3 id="stack">Stack</h3>
+                    <p>도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다.
+Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>stack_list = [100, 200]
-stack_list
-</code></pre></div></div>
+<h2 id="11-가상-머신과-도커-컨테이너">1.1 가상 머신과 도커 컨테이너</h2>
 
-<p>[100, 200]</p>
+<p>기존의 가상머신은 <a href="https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80">하이퍼바이저</a> 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에 성능 손실이 발생한다. 또한 배포를 위한 이미지를 생성하는 경우에 크기가 크다. 그러므로 가상머신 이미지를 애플리케이션으로 배포하기에는 부담스럽다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>stack_list.append(300)
-stack_list
-</code></pre></div></div>
+<p>이런 문제를 해결 가능한 도커는 컨테이너라는 가상화 공간을 생성하기 위해 리눅스 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용함으로 프로세스 단위의 격리 환경을 만들어 성능 손실이 거의 없다. 호스트의 커널을 공유하여 사용하고 애플리케이션을 구동하는데 필요한 라이브러리 및 실행파일만 컨테이너에 포함하고 있기 때문에 이미지 용량 또한 타 가상머신에 비해 작다.</p>
 
-<p>[100, 200, 300]</p>
+<p><img src="assets/built/images/docker/pic_1_1.png" alt="그림 1.1" /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>stack_list.pop()
-stack_list
-</code></pre></div></div>
+<h2 id="12-도커를-시작해야-하는-이유">1.2 도커를 시작해야 하는 이유</h2>
 
-<p>[100, 200]</p>
+<h3 id="121-애플리케이션-개발과-배포가-편해진다">1.2.1 애플리케이션 개발과 배포가 편해진다</h3>
 
-<h3 id="queue">Queue</h3>
+<p>도커 컨테이너 내부에서 소프트웨어를 설치하고 설정파일을 수정해도 호스트 OS에는 영향이 없다. 독립된 개발 환경을 보장 받는다는 것이다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>queue_list = ['a', 'b']
-queue_list
-</code></pre></div></div>
+<p>컨테이너 내부에서 작업 후 운영환경에 배포할 경우, ‘도커 이미지’만 패키지로 만들어 전달하기만 하면 된다. 패키지나 라이브러리 설치가 필요없다.</p>
 
-<p>[‘a’, ‘b’]</p>
+<h3 id="122-여러-애플리케이션의-독립성과-확장성이-높아진다">1.2.2 여러 애플리케이션의 독립성과 확장성이 높아진다</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>queue_list.append('c')
-queue_list
-</code></pre></div></div>
+<p>최근에 새롭게 떠오르는 서비스 방식인 <a href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4">마이크로서비스</a> 구조는 여러 모듈을 독립된 형태로 구성하기 때문에 언어에 종속되지 않고 각 모듈 관리가 쉬워진다.</p>
 
-<p>[‘a’, ‘b’, ‘c’]</p>
+<p>컨테이너는 마이크로서비스 구조에서 가장 많이 사용되고 있는 가상화 기술이다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>queue_list.pop(0)
-queue_list
-</code></pre></div></div>
+<p><img src="assets/built/images/docker/pic_1_2.png" alt="그림 1.2" /></p>
 
-<p>[‘b’, ‘c’]</p>
+<h2 id="13-도커-엔진-설치">1.3 도커 엔진 설치</h2>
+
+<h3 id="131-도커엔진의-종류-및-버전">1.3.1 도커엔진의 종류 및 버전</h3>
+
+<p>도커엔진은 도커EE(Docker Enterprise Edition)와 도커CE(Community Edition)으로 구분되어 제공된다. 도커EE는 유료 기업용 솔루션이며, 각종 기술 지원 및 실제 서비스 단계에서 필요한 부가 기능을 함께 제공한다. 도커CE는 별도의 기술 지원 및 서비스를 제공하지 않고 핵심적인 기능만 사용 가능하며 무료이다.</p>
+
+<p>이 책에서는 도커CE를 기준으로 설명한다.</p>
+
+<h3 id="132---134-운영체제별-도커-설치">1.3.2 - 1.3.4 운영체제별 도커 설치</h3>
+
+<p>운영체제별 설치 방법 참조: <a href="https://docs.docker.com/get-docker/">docker docs</a></p>
+
 
                 </div>
             </section>
@@ -376,9 +259,9 @@ queue_list
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'http://localhost:4000/python1';
-                            var this_page_identifier = '/python1';
-                            var this_page_title = 'List를 Stack이나 Queue처럼 사용하기';
+                            var this_page_url = 'http://localhost:4000/docker-ch01';
+                            var this_page_identifier = '/docker-ch01';
+                            var this_page_title = '1. 도커란?';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -404,34 +287,111 @@ queue_list
                 
                 
                 
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Vans DS Gym &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/docker/">Docker</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/docker-ch02-02">2. 도커 엔진 (2)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/docker-ch02-01">2. 도커 엔진 (1)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/docker-0intro">시작하기 앞서</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/docker/">
+                                
+                                    See all 3 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
 
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/stack_queue-1">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/algorithm-logo.png)"></div>
-            </a>
+    <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/stack_queue-1">
+            <a class="post-card-content-link" href="/docker-ch02-01">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Algorithm</span>
+                                <span class="post-card-tags">Docker</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Programmers  Solution - 주식 가격</h2>
+                    <h2 class="post-card-title">2. 도커 엔진 (1)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>Programmers 문제 링크 바로가기
+                        <p>2.1 도커 이미지와 컨테이너
 
 </p>
                     
@@ -455,6 +415,46 @@ queue_list
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
+                
+
+    <article class="post-card post-template no-image">
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/docker-0intro">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Docker</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">시작하기 앞서</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>이 글은 시작하세요! 도커/쿠버네티스 를 직접 따라해보고 요약 및 정리한 글 입니다.
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
 
         </div>
     </div>
@@ -469,18 +469,18 @@ queue_list
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">List를 Stack이나 Queue처럼 사용하기</div>
+    <div class="floating-header-title">1. 도커란?</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=List%EB%A5%BC+Stack%EC%9D%B4%EB%82%98+Queue%EC%B2%98%EB%9F%BC+%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&amp;url=https://vankze34.github.io/python1"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=1.+%EB%8F%84%EC%BB%A4%EB%9E%80%3F&amp;url=https://vankze34.github.io/docker-ch01"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/python1"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/docker-ch01"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

@@ -43,7 +43,7 @@
     <meta property="og:site_name" content="Vans DS Gym" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="2. 도커 엔진 (2)" />
-    <meta property="og:description" content="2.2 도커 컨테이너 다루기 2.2.4 컨테이너를 외부에 노출 컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 확인해보자 root@xxx:/# ifconfig 하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다. # docker run -i" />
+    <meta property="og:description" content="2.2 도커 컨테이너 다루기 2.2.4 컨테이너를 외부에 노출 컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 아이피 확인 $ docker run -i -t --name network_test ubuntu:14.04 root@xxx:/# ifconfig 하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를" />
     <meta property="og:url" content="http://localhost:4000/docker-ch02-02" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -53,7 +53,7 @@
     <meta property="article:tag" content="Docker" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="2. 도커 엔진 (2)" />
-    <meta name="twitter:description" content="2.2 도커 컨테이너 다루기 2.2.4 컨테이너를 외부에 노출 컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 확인해보자 root@xxx:/# ifconfig 하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다. # docker run -i" />
+    <meta name="twitter:description" content="2.2 도커 컨테이너 다루기 2.2.4 컨테이너를 외부에 노출 컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 아이피 확인 $ docker run -i -t --name network_test ubuntu:14.04 root@xxx:/# ifconfig 하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -85,7 +85,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/docker-ch02-02"
     },
-    "description": "2.2 도커 컨테이너 다루기 2.2.4 컨테이너를 외부에 노출 컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 확인해보자 root@xxx:/# ifconfig 하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다. # docker run -i"
+    "description": "2.2 도커 컨테이너 다루기 2.2.4 컨테이너를 외부에 노출 컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 아이피 확인 $ docker run -i -t --name network_test ubuntu:14.04 root@xxx:/# ifconfig 하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를"
 }
     </script>
 
@@ -185,15 +185,36 @@ into the {body} of the default.hbs template -->
 
 <h3 id="224-컨테이너를-외부에-노출">2.2.4 컨테이너를 외부에 노출</h3>
 
-<p>컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 확인해보자</p>
+<p>컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@xxx:/# ifconfig
+<h6 id="ifconfig로-아이피-확인">ifconfig로 아이피 확인</h6>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker run -i -t --name network_test ubuntu:14.04
+root@xxx:/# ifconfig
 </code></pre></div></div>
+<p><img src="assets/built/images/docker/pic_2_2_4_1.png" alt="ifconfig" /></p>
 
 <p>하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다.</p>
 
+<h6 id="호스트와-컨테이너의-포트-연결-개방">호스트와 컨테이너의 포트 연결 (개방)</h6>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># docker run -i -t --name mywebserver -p 80:80 ubuntu:14.04
 </code></pre></div></div>
+<p>-p 옵션을 통해 [호스트의 포트]:[컨테이너의 포트]의 형태로 포트를 연결</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># docker run -i -t -p 3306:3306 -p 192.168.0.100:7777:80 ubuntu:14.04
+</code></pre></div></div>
+<p>-p 옵션을 여러번 사용하여 여러개의 포트를 외부에 개방 가능</p>
+
+<p>※ 호스트에서 이미 사용중인 포트번호를 사용하면 에러가 발생한다</p>
+
+<h6 id="컨테이너-내부에서-아파치를-기동하여-호스트에서-접속-테스트">컨테이너 내부에서 아파치를 기동하여 호스트에서 접속 테스트</h6>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># apt-get update
+# apt-get install apache2 -y
+# service apache2 start
+</code></pre></div></div>
+
+<p>호스트에서 [호스트IP]:80으로 접속
+<img src="assets/built/images/docker/pic_2_2_4_2.png" alt="binding test" /></p>
 
                 </div>
             </section>

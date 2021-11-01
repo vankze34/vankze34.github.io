@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/vankze34/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-01T19:01:33+09:00</updated>
+  <updated>2021-11-01T22:13:53+09:00</updated>
   <id>http://localhost:4000/author/vankze34/feed.xml</id>
 
   
@@ -396,15 +396,36 @@ Ctrl+P,Q: 컨테이의 셸에서만 빠져나오기&lt;/p&gt;</content>
 
 &lt;h3 id=&quot;224-컨테이너를-외부에-노출&quot;&gt;2.2.4 컨테이너를 외부에 노출&lt;/h3&gt;
 
-&lt;p&gt;컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다. ifconfig로 확인해보자&lt;/p&gt;
+&lt;p&gt;컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@xxx:/# ifconfig
+&lt;h6 id=&quot;ifconfig로-아이피-확인&quot;&gt;ifconfig로 아이피 확인&lt;/h6&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker run -i -t --name network_test ubuntu:14.04
+root@xxx:/# ifconfig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_2_2_4_1.png&quot; alt=&quot;ifconfig&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다.&lt;/p&gt;
 
+&lt;h6 id=&quot;호스트와-컨테이너의-포트-연결-개방&quot;&gt;호스트와 컨테이너의 포트 연결 (개방)&lt;/h6&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# docker run -i -t --name mywebserver -p 80:80 ubuntu:14.04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;-p 옵션을 통해 [호스트의 포트]:[컨테이너의 포트]의 형태로 포트를 연결&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# docker run -i -t -p 3306:3306 -p 192.168.0.100:7777:80 ubuntu:14.04
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;-p 옵션을 여러번 사용하여 여러개의 포트를 외부에 개방 가능&lt;/p&gt;
+
+&lt;p&gt;※ 호스트에서 이미 사용중인 포트번호를 사용하면 에러가 발생한다&lt;/p&gt;
+
+&lt;h6 id=&quot;컨테이너-내부에서-아파치를-기동하여-호스트에서-접속-테스트&quot;&gt;컨테이너 내부에서 아파치를 기동하여 호스트에서 접속 테스트&lt;/h6&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt-get update
+# apt-get install apache2 -y
+# service apache2 start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;호스트에서 [호스트IP]:80으로 접속
+&lt;img src=&quot;assets/built/images/docker/pic_2_2_4_2.png&quot; alt=&quot;binding test&quot; /&gt;&lt;/p&gt;</content>
 
       
       

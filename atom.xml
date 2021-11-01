@@ -8,6 +8,39 @@
     
       
       <item>
+        <title>CentOS의 Jupyter Notebook 외부에서 접속하기</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://vankze34.github.io/others-01&quot;&gt;선행: CentOS에 Jupyter Notebook 설치&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 30 Oct 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/others-02</link>
+        <guid isPermaLink="true">http://localhost:4000/others-02</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>CentOS에 Jupyter Notebook 설치</title>
+        
+          <description>&lt;h3 id=&quot;설치-스크립트-다운&quot;&gt;설치 스크립트 다운&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /tmp
+$ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Sat, 30 Oct 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/others-01</link>
+        <guid isPermaLink="true">http://localhost:4000/others-01</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title>
         
           <description>&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="http://localhost:4000/tag/unclassified/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2021-11-01T19:01:33+09:00</updated>
+  <id>http://localhost:4000/tag/unclassified/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Vans DS Gym | </title>
+  
+
+  
+    <subtitle>데이터 사이언스 훈련장</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">CentOS의 Jupyter Notebook 외부에서 접속하기</title>
+      <link href="http://localhost:4000/others-02" rel="alternate" type="text/html" title="CentOS의 Jupyter Notebook 외부에서 접속하기" />
+      <published>2021-10-30T00:00:00+09:00</published>
+      <updated>2021-10-30T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-02</id>
+      <content type="html" xml:base="http://localhost:4000/others-02">&lt;p&gt;&lt;a href=&quot;https://vankze34.github.io/others-01&quot;&gt;선행: CentOS에 Jupyter Notebook 설치&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;프로파일-생성&quot;&gt;프로파일 생성&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jupyter notebook --generate-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;위의 명령어를 통해 ‘/home/(username)/.jupyter/jupyter_notebook_config.py’파일이 생성된다&lt;/p&gt;
+
+&lt;h3 id=&quot;내부ip-확인&quot;&gt;내부ip 확인&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ifconfig
+ens3: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt;  mtu 9001
+        inet [확인해야 할 ip주소]  netmask 255.255.240.0  broadcast 172.31.47.255
+        inet6 fe80::85e:e5ff:fe32:421a  prefixlen 64  scopeid 0x20&amp;lt;link&amp;gt;
+        ether 0a:5e:e5:32:42:1a  txqueuelen 1000  (Ethernet)
+        RX packets 38282  bytes 19365933 (18.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 25593  bytes 11975222 (11.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73&amp;lt;UP,LOOPBACK,RUNNING&amp;gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&amp;lt;host&amp;gt;
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 23438  bytes 7890927 (7.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 23438  bytes 7890927 (7.5 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;[확인해야 할 ip주소] 를 기록해둔다&lt;/p&gt;
+
+&lt;h3 id=&quot;프로파일-수정&quot;&gt;프로파일 수정&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ vi /home/(username)/.jupyter/jupyter_notebook_config.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;ip-address-수정-후-주석-제거&quot;&gt;ip address 수정 후 주석 제거&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /home/(username)/.jupyter/jupyter_notebook_config.py
+
+(중략)
+
+c.NotebookApp.ip = &apos;[위에서 기록해놓은 ip주소 입력]&apos;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;jupyter-notebook-실행-후-web-browser-실행-안되게-변경-후-주석-제거&quot;&gt;jupyter notebook 실행 후 web-browser 실행 안되게 변경 후 주석 제거&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /home/(username)/.jupyter/jupyter_notebook_config.py
+
+(중략)
+
+c.NotebokkApp.open_browser = False
+
+(후략)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;포트번호-설정-후-주석-제거&quot;&gt;포트번호 설정 후 주석 제거&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /home/(username)/.jupyter/jupyter_notebook_config.py
+
+(중략)
+
+c.NotebookApp.port = XXXX
+
+(후략)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;비밀번호-설정&quot;&gt;비밀번호 설정&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ipython
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from IPython.lib import passwd
+passwd()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;비밀번호를 2회 입력 후 출력된 해시(‘sha1:…’) 복사&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /home/(username)/.jupyter/jupyter_notebook_config.py
+
+(중략)
+
+# c.NotebookApp.password = &apos;위에서 복사한 hash 입력&apos;
+
+(후략)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;서버에서-jupyter-notebook-실행&quot;&gt;서버에서 jupyter notebook 실행&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이후 클라이언트에서 http://서버ip주소:8000 로 접속&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">선행: CentOS에 Jupyter Notebook 설치</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">CentOS에 Jupyter Notebook 설치</title>
+      <link href="http://localhost:4000/others-01" rel="alternate" type="text/html" title="CentOS에 Jupyter Notebook 설치" />
+      <published>2021-10-30T00:00:00+09:00</published>
+      <updated>2021-10-30T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-01</id>
+      <content type="html" xml:base="http://localhost:4000/others-01">&lt;h3 id=&quot;설치-스크립트-다운&quot;&gt;설치 스크립트 다운&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /tmp
+$ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;스크립트-데이터-무결성-확인-스크립트-체크섬&quot;&gt;스크립트 데이터 무결성 확인 (스크립트 체크섬)&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sha256sum Anaconda3-5.3.1-Linux-x86_64.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;위에서-출력된-hash가-아래의-주소의-sha256과-일치하는지-확인&quot;&gt;위에서 출력된 hash가 아래의 주소의 sha256과 일치하는지 확인&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-5.3.1-Linux-x86_64.sh-hash.html&quot;&gt;https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-5.3.1-Linux-x86_64.sh-hash.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;아나콘다-설치-스크립트-실행&quot;&gt;아나콘다 설치 스크립트 실행&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bash Anaconda3-5.3.1-Linux-x86_64.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;환경변수-적용&quot;&gt;환경변수 적용&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;위의-환경변수가-적용-안됐을-시&quot;&gt;위의 환경변수가 적용 안됐을 시&lt;/h3&gt;
+
+&lt;p&gt;~/.bashrc 최하단에 직접 추가&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ vi ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...
+(이상 생략)
+
+export PATH=&quot;/home/(username)/anaconda3/bin:$PATH&quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;확인&quot;&gt;확인&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ conda info
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;아나콘다 정보가 나오면 성공&lt;/p&gt;
+
+&lt;h3 id=&quot;기동&quot;&gt;기동&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">설치 스크립트 다운 $ cd /tmp $ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

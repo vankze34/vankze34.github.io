@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/docker/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-01T22:13:53+09:00</updated>
+  <updated>2021-11-13T18:13:20+09:00</updated>
   <id>http://localhost:4000/tag/docker/feed.xml</id>
 
   
@@ -30,6 +30,137 @@
   
   
 
+  
+    <entry>
+      <title type="html">Docker에 ubuntu 설치 및 기본 패키지 추가</title>
+      <link href="http://localhost:4000/docker-install_ubuntu" rel="alternate" type="text/html" title="Docker에 ubuntu 설치 및 기본 패키지 추가" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/docker-install_ubuntu</id>
+      <content type="html" xml:base="http://localhost:4000/docker-install_ubuntu">&lt;h2 id=&quot;ubuntu-설치&quot;&gt;Ubuntu 설치&lt;/h2&gt;
+
+&lt;h3 id=&quot;도커-이미지-검색&quot;&gt;도커 이미지 검색&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker search ubuntu
+INDEX       NAME                                                                DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+docker.io   docker.io/ubuntu                                                    Ubuntu is a Debian-based Linux operating s...   13117     [OK]       
+docker.io   docker.io/dorowu/ubuntu-desktop-lxde-vnc                            Docker image to provide HTML5 VNC interfac...   
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;최신-버전의-ubuntu-이미지-다운로드&quot;&gt;최신 버전의 Ubuntu 이미지 다운로드&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker pull ubuntu:latest
+Trying to pull repository docker.io/library/ubuntu ... 
+latest: Pulling from docker.io/library/ubuntu
+7b1a6ab2e44d: Pull complete 
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Downloaded newer image for docker.io/ubuntu:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;이미지-리스트-출력&quot;&gt;이미지 리스트 출력&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker.io/ubuntu    latest              ba6acccedd29        4 weeks ago         72.8 MB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pull한-이미지로-컨테이너-생성&quot;&gt;pull한 이미지로 컨테이너 생성&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker run -it --name=ubuntu_server ubuntu
+root@2cffa83792ef:/# 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;우분투-설치-관리자-apt-업데이트&quot;&gt;우분투 설치 관리자 apt 업데이트&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get
+apt 2.0.6 (amd64)
+Usage: apt-get [options] command
+       apt-get [options] install|remove pkg1 [pkg2 ...]
+       apt-get [options] source pkg1 [pkg2 ...]
+
+apt-get is a command line interface for retrieval of packages
+and information about them from authenticated sources and
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;vim-설치&quot;&gt;vim 설치&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get install vim
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+
+...
+
+0 upgraded, 30 newly installed, 0 to remove and 0 not upgraded.
+Need to get 14.9 MB of archives.
+After this operation, 70.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sudo-설치&quot;&gt;sudo 설치&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get install sudo
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  sudo
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sudoer-파일-속성-및-권한-수정&quot;&gt;sudoer 파일 속성 및 권한 수정&lt;/h3&gt;
+
+&lt;p&gt;/etc/sudoers파일은 최초에 440으로 설정되어 있어서 readonly 상태이다. 다음과 같이 수정 권한을 부여하면 수정이 가능해진다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# chattr -i /etc/sudoers
+root@2cffa83792ef:/# chmod u+w /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;chattr -i [filename] : [filename]의 i 속성 제거&lt;/p&gt;
+
+    &lt;p&gt;※ i 속성: 파일을 read-only로만 열 수 있게 설정&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;chmod u+w [filename]: [filename] 소유 사용자에게 쓰기 권한 추가&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="docker" />
+      
+
+      
+        <summary type="html">Ubuntu 설치</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">2. 도커 엔진 (2)</title>

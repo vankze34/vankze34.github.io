@@ -1,4 +1,404 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-01T22:13:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vans DS Gym</title><subtitle>데이터 사이언스 훈련장</subtitle><entry><title type="html">CentOS에 Jupyter Notebook 설치</title><link href="http://localhost:4000/others-01" rel="alternate" type="text/html" title="CentOS에 Jupyter Notebook 설치" /><published>2021-10-30T00:00:00+09:00</published><updated>2021-10-30T00:00:00+09:00</updated><id>http://localhost:4000/others-01</id><content type="html" xml:base="http://localhost:4000/others-01">&lt;h3 id=&quot;설치-스크립트-다운&quot;&gt;설치 스크립트 다운&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-13T18:13:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vans DS Gym</title><subtitle>데이터 사이언스 훈련장</subtitle><entry><title type="html">Ubuntu에 django 설치</title><link href="http://localhost:4000/others-06" rel="alternate" type="text/html" title="Ubuntu에 django 설치" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/others-06</id><content type="html" xml:base="http://localhost:4000/others-06">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;python-가상환경-설치&quot;&gt;python 가상환경 설치&lt;/h2&gt;
+
+&lt;h2 id=&quot;python-가상환경-활성화&quot;&gt;python 가상환경 활성화&lt;/h2&gt;
+
+&lt;h2 id=&quot;django-설치&quot;&gt;django 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ pip install django
+Collecting django
+  Downloading Django-3.2.9-py3-none-any.whl (7.9 MB)
+     |████████████████████████████████| 7.9 MB 2.3 MB/s 
+Collecting sqlparse&amp;gt;=0.2.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 2.1 MB/s 
+Collecting asgiref&amp;lt;4,&amp;gt;=3.3.2
+  Downloading asgiref-3.4.1-py3-none-any.whl (25 kB)
+Collecting pytz
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+     |████████████████████████████████| 503 kB 59.0 MB/s 
+Installing collected packages: sqlparse, asgiref, pytz, django
+Successfully installed asgiref-3.4.1 django-3.2.9 pytz-2021.3 sqlparse-0.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;django-버전-확인&quot;&gt;django 버전 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ python -m django --version
+3.2.9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version Python 3.8.10</summary></entry><entry><title type="html">Ubuntu에 python 설치</title><link href="http://localhost:4000/others-04" rel="alternate" type="text/html" title="Ubuntu에 python 설치" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/others-04</id><content type="html" xml:base="http://localhost:4000/others-04">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+-bash: python3: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;우분투-설치-관리자-apt-업데이트&quot;&gt;우분투 설치 관리자 apt 업데이트&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;python-설치&quot;&gt;python 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get install python3
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpython3-stdlib python3-minimal python3.8 python3.8-minimal
+
+...
+
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2365 kB of archives.
+After this operation, 6494 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pip-설치&quot;&gt;pip 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get install pip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting &apos;python3-pip&apos; instead of &apos;pip&apos;
+
+...
+
+0 upgraded, 94 newly installed, 0 to remove and 0 not upgraded.
+Need to get 63.5 MB of archives.
+After this operation, 281 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ pip --version
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found</summary></entry><entry><title type="html">Ubuntu에 python 가상환경 설치</title><link href="http://localhost:4000/others-05" rel="alternate" type="text/html" title="Ubuntu에 python 가상환경 설치" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/others-05</id><content type="html" xml:base="http://localhost:4000/others-05">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;venv-모듈-설치&quot;&gt;venv 모듈 설치&lt;/h2&gt;
+
+&lt;p&gt;python3.6 이상 버전 부터는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python-venv&lt;/code&gt; 패키지를 설치하여 venv 모듈을 사용&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ pip --version
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+ubuntu@2cffa83792ef:~$ sudo apt install python3-venv
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3.8-venv
+The following NEW packages will be installed:
+  python3-venv python3.8-venv
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 6680 B of archives.
+After this operation, 38.9 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;가상환경을-저장할-디렉토리로-이동&quot;&gt;가상환경을 저장할 디렉토리로 이동&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ cd [dir_path]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 -m venv my-pj-venv     
+ubuntu@2cffa83792ef:~$ ls
+my-pj-venv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;가상환경-활성화&quot;&gt;가상환경 활성화&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ source my-pj-venv/bin/activate
+(my-pj-venv) ubuntu@2cffa83792ef:~$ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제 가상 환경이 활성화되었으므로 pip을 사용하여 패키지를 설치, 업그레이드 및 제거할 수 있습니다.
+가상 환경에서 pip3 대신 명령 pip을 사용하고 python3 대신 python을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;가상환경-비활성화&quot;&gt;가상환경 비활성화&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version Python 3.8.10</summary></entry><entry><title type="html">Ubuntu에 유저 추가하기</title><link href="http://localhost:4000/others-03" rel="alternate" type="text/html" title="Ubuntu에 유저 추가하기" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/others-03</id><content type="html" xml:base="http://localhost:4000/others-03">&lt;h2 id=&quot;adduser-username&quot;&gt;adduser [username]&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# adduser ubuntu
+Adding user `ubuntu&apos; ...
+Adding new group `ubuntu&apos; (1000) ...
+Adding new user `ubuntu&apos; (1000) with group `ubuntu&apos; ...
+Creating home directory `/home/ubuntu&apos; ...
+Copying files from `/etc/skel&apos; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;패스워드-입력&quot;&gt;패스워드 입력&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for ubuntu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;추가-정보-입력&quot;&gt;추가 정보 입력&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;입력-정보-확인&quot;&gt;입력 정보 확인&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Is the information correct? [Y/n] Y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;change-user&quot;&gt;change user&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# su - ubuntu
+ubuntu@2cffa83792ef:~$ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;생성한-user를-sudoer-파일에-추가-관리자-권한&quot;&gt;생성한 user를 sudoer 파일에 추가 (관리자 권한)&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ exit
+root@2cffa83792ef:/# vi /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#
+# This file MUST be edited with the &apos;visudo&apos; command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path=&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin&quot;
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on &quot;#include&quot; directives:
+
+#includedir /etc/sudoers.d
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+&quot;/etc/sudoers&quot; [readonly] 30L, 755C                                                                        6,1           All
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;20번째 줄에 있는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root    ALL=(ALL:ALL) ALL&lt;/code&gt;아래에 다음을 추가&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu ALL=(ALL:ALL) ALL&lt;/code&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">adduser [username]</summary></entry><entry><title type="html">Ubuntu에 nginx 설치</title><link href="http://localhost:4000/others-08" rel="alternate" type="text/html" title="Ubuntu에 nginx 설치" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/others-08</id><content type="html" xml:base="http://localhost:4000/others-08">&lt;h2 id=&quot;nginx-install되어있는지-확인&quot;&gt;nginx install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ nginx --version
+-bash: nginx: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;nginx-설치&quot;&gt;nginx 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo apt-get install nginx
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+...
+
+After this operation, 52.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by
+presenting a list of cities, representing the time zones in which they are located.
+  1. Africa   3. Antarctica  5. Arctic  7. Atlantic  9. Indian    11. SystemV  13. Etc
+  2. America  4. Australia   6. Asia    8. Europe    10. Pacific  12. US
+Geographic area: 6
+
+...
+
+Please select the city or region corresponding to your time zone.
+
+  1. Aden      16. Brunei       31. Hong_Kong    46. Kuala_Lumpur  61. Pyongyang      76. Tehran
+  
+...
+
+  9. Baghdad   24. Dubai        39. Kamchatka    54. Nicosia       69. Seoul          84. Ust-Nera
+
+...
+
+Time zone: 69
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nginx -V
+nginx version: nginx/1.18.0 (Ubuntu)
+built with OpenSSL 1.1.1f  31 Mar 2020
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;nginx-실행&quot;&gt;nginx 실행&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo service nginx start
+ * Starting nginx nginx                                                                                        [ OK ] 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">nginx install되어있는지 확인 ubuntu@2cffa83792ef:~$ nginx --version -bash: nginx: command not found</summary></entry><entry><title type="html">Docker에 ubuntu 설치 및 기본 패키지 추가</title><link href="http://localhost:4000/docker-install_ubuntu" rel="alternate" type="text/html" title="Docker에 ubuntu 설치 및 기본 패키지 추가" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/docker-install_ubuntu</id><content type="html" xml:base="http://localhost:4000/docker-install_ubuntu">&lt;h2 id=&quot;ubuntu-설치&quot;&gt;Ubuntu 설치&lt;/h2&gt;
+
+&lt;h3 id=&quot;도커-이미지-검색&quot;&gt;도커 이미지 검색&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker search ubuntu
+INDEX       NAME                                                                DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+docker.io   docker.io/ubuntu                                                    Ubuntu is a Debian-based Linux operating s...   13117     [OK]       
+docker.io   docker.io/dorowu/ubuntu-desktop-lxde-vnc                            Docker image to provide HTML5 VNC interfac...   
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;최신-버전의-ubuntu-이미지-다운로드&quot;&gt;최신 버전의 Ubuntu 이미지 다운로드&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker pull ubuntu:latest
+Trying to pull repository docker.io/library/ubuntu ... 
+latest: Pulling from docker.io/library/ubuntu
+7b1a6ab2e44d: Pull complete 
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Downloaded newer image for docker.io/ubuntu:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;이미지-리스트-출력&quot;&gt;이미지 리스트 출력&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker.io/ubuntu    latest              ba6acccedd29        4 weeks ago         72.8 MB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pull한-이미지로-컨테이너-생성&quot;&gt;pull한 이미지로 컨테이너 생성&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker run -it --name=ubuntu_server ubuntu
+root@2cffa83792ef:/# 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;우분투-설치-관리자-apt-업데이트&quot;&gt;우분투 설치 관리자 apt 업데이트&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get
+apt 2.0.6 (amd64)
+Usage: apt-get [options] command
+       apt-get [options] install|remove pkg1 [pkg2 ...]
+       apt-get [options] source pkg1 [pkg2 ...]
+
+apt-get is a command line interface for retrieval of packages
+and information about them from authenticated sources and
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;vim-설치&quot;&gt;vim 설치&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get install vim
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+
+...
+
+0 upgraded, 30 newly installed, 0 to remove and 0 not upgraded.
+Need to get 14.9 MB of archives.
+After this operation, 70.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sudo-설치&quot;&gt;sudo 설치&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get install sudo
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  sudo
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sudoer-파일-속성-및-권한-수정&quot;&gt;sudoer 파일 속성 및 권한 수정&lt;/h3&gt;
+
+&lt;p&gt;/etc/sudoers파일은 최초에 440으로 설정되어 있어서 readonly 상태이다. 다음과 같이 수정 권한을 부여하면 수정이 가능해진다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# chattr -i /etc/sudoers
+root@2cffa83792ef:/# chmod u+w /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;chattr -i [filename] : [filename]의 i 속성 제거&lt;/p&gt;
+
+    &lt;p&gt;※ i 속성: 파일을 read-only로만 열 수 있게 설정&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;chmod u+w [filename]: [filename] 소유 사용자에게 쓰기 권한 추가&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">Ubuntu 설치</summary></entry><entry><title type="html">Ubuntu에 git 설치</title><link href="http://localhost:4000/others-07" rel="alternate" type="text/html" title="Ubuntu에 git 설치" /><published>2021-11-13T00:00:00+09:00</published><updated>2021-11-13T00:00:00+09:00</updated><id>http://localhost:4000/others-07</id><content type="html" xml:base="http://localhost:4000/others-07">&lt;h2 id=&quot;git-install되어있는지-확인&quot;&gt;git install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ git --version
+-bash: git: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-설치&quot;&gt;git 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ sudo apt-get install git
+[sudo] password for ubuntu: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+...
+
+After this operation, 52.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git --version
+git version 2.25.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-설정&quot;&gt;git 설정&lt;/h2&gt;
+
+&lt;p&gt;깃에 push했을때 올라갈 내 정보를 입력&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.name [git_username]
+(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.mail [git_email]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-repository-가져오기&quot;&gt;git repository 가져오기&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ git clone [pj_url.git]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">git install되어있는지 확인 ubuntu@2cffa83792ef:~$ git --version -bash: git: command not found</summary></entry><entry><title type="html">CentOS에 Jupyter Notebook 설치</title><link href="http://localhost:4000/others-01" rel="alternate" type="text/html" title="CentOS에 Jupyter Notebook 설치" /><published>2021-10-30T00:00:00+09:00</published><updated>2021-10-30T00:00:00+09:00</updated><id>http://localhost:4000/others-01</id><content type="html" xml:base="http://localhost:4000/others-01">&lt;h3 id=&quot;설치-스크립트-다운&quot;&gt;설치 스크립트 다운&lt;/h3&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /tmp
 $ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -127,181 +527,7 @@ passwd()
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jupyter notebook
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이후 클라이언트에서 http://서버ip주소:8000 로 접속&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">선행: CentOS에 Jupyter Notebook 설치</summary></entry><entry><title type="html">2. 도커 엔진 (2)</title><link href="http://localhost:4000/docker-ch02-02" rel="alternate" type="text/html" title="2. 도커 엔진 (2)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-ch02-02</id><content type="html" xml:base="http://localhost:4000/docker-ch02-02">&lt;h2 id=&quot;22-도커-컨테이너-다루기&quot;&gt;2.2 도커 컨테이너 다루기&lt;/h2&gt;
-
-&lt;h3 id=&quot;224-컨테이너를-외부에-노출&quot;&gt;2.2.4 컨테이너를 외부에 노출&lt;/h3&gt;
-
-&lt;p&gt;컨테이너는 가상머신과 마찬가지로 IP 주소를 할당받는다. 기본적으로는 172.17.0.x의 IP를 순차적으로 할당받는다.&lt;/p&gt;
-
-&lt;h6 id=&quot;ifconfig로-아이피-확인&quot;&gt;ifconfig로 아이피 확인&lt;/h6&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker run -i -t --name network_test ubuntu:14.04
-root@xxx:/# ifconfig
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_2_2_4_1.png&quot; alt=&quot;ifconfig&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;하지만 아무런 설정을 하지 않으면 외부에서 컨테이너로 접근이 불가능하며 호스트에서만 통신 가능하다. 외부로 노출시키기 위해서는 eth0의 IP와 포트를 호스트의 IP와 포트에 바인딩해야 한다.&lt;/p&gt;
-
-&lt;h6 id=&quot;호스트와-컨테이너의-포트-연결-개방&quot;&gt;호스트와 컨테이너의 포트 연결 (개방)&lt;/h6&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# docker run -i -t --name mywebserver -p 80:80 ubuntu:14.04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;-p 옵션을 통해 [호스트의 포트]:[컨테이너의 포트]의 형태로 포트를 연결&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# docker run -i -t -p 3306:3306 -p 192.168.0.100:7777:80 ubuntu:14.04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;-p 옵션을 여러번 사용하여 여러개의 포트를 외부에 개방 가능&lt;/p&gt;
-
-&lt;p&gt;※ 호스트에서 이미 사용중인 포트번호를 사용하면 에러가 발생한다&lt;/p&gt;
-
-&lt;h6 id=&quot;컨테이너-내부에서-아파치를-기동하여-호스트에서-접속-테스트&quot;&gt;컨테이너 내부에서 아파치를 기동하여 호스트에서 접속 테스트&lt;/h6&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt-get update
-# apt-get install apache2 -y
-# service apache2 start
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;호스트에서 [호스트IP]:80으로 접속
-&lt;img src=&quot;assets/built/images/docker/pic_2_2_4_2.png&quot; alt=&quot;binding test&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">2.2 도커 컨테이너 다루기</summary></entry><entry><title type="html">시작하기 앞서</title><link href="http://localhost:4000/ml-0intro" rel="alternate" type="text/html" title="시작하기 앞서" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-0intro</id><content type="html" xml:base="http://localhost:4000/ml-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/pymldg-rev/&quot;&gt;파이썬 머신러닝 완벽가이드&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/ml/2021-10-28-ml-intro-book.jpg&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">이 글은 파이썬 머신러닝 완벽가이드 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)</title><link href="http://localhost:4000/ml-ch01-01" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-01</id><content type="html" xml:base="http://localhost:4000/ml-ch01-01">&lt;h3 id=&quot;01-머신러닝의-개념&quot;&gt;01. 머신러닝의 개념&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;머신러닝의 개념은 다양하게 표현 가능하나, 일반적으로는 애플리케이션을 수정하지 않고도 데이터를 기반으로 패턴을 학습하고 결과를 예측하는 알고리즘 기법을 통칭한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;머신러닝을 이용하면 금융사기 거래 적발이나 스팸메일 분류 등 소프트웨어 코드만으로 해결하기 힘든 현실세계의 문제들을 손쉽게 해결 가능하다. 여러 복잡한 조건과 패턴을 스스로 인지하고 해결하는 것이다.&lt;/p&gt;
-
-&lt;h4 id=&quot;머신러닝의-분류&quot;&gt;머신러닝의 분류&lt;/h4&gt;
-
-&lt;p&gt;일반적으로 머신러닝은 지도학습(Supervised Learning)과 비지도 학습(Un-supervised Learning), 강화학습(Reinforcement Learning)으로 나뉜다.&lt;/p&gt;
-
-&lt;h6 id=&quot;지도학습&quot;&gt;지도학습&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;분류&lt;/li&gt;
-  &lt;li&gt;회귀&lt;/li&gt;
-  &lt;li&gt;추천 시스템&lt;/li&gt;
-  &lt;li&gt;시각/음성 감지/인지&lt;/li&gt;
-  &lt;li&gt;텍스트 분석, NLP&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h6 id=&quot;비지도학습&quot;&gt;비지도학습&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;클러스터링&lt;/li&gt;
-  &lt;li&gt;차원 축소&lt;/li&gt;
-  &lt;li&gt;강화학습&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;데이터-전쟁&quot;&gt;데이터 전쟁&lt;/h4&gt;
-
-&lt;p&gt;머신러닝에서 중요한 요소는 “데이터”와 “머신러닝 알고리즘”이 있다. 품질 좋은 데이터를 갖추지 못한다면 머신러닝 알고리즘이 좋아도 좋은 결과를 얻지 못하며, 품질 좋은 데이터를 갖추어도 알고리즘이 좋지 못하면 좋은 결과를 도출할 수 없다.&lt;/p&gt;
-
-&lt;h4 id=&quot;파이썬과-r-기반의-머신러닝-비교&quot;&gt;파이썬과 R 기반의 머신러닝 비교&lt;/h4&gt;
-
-&lt;p&gt;머신러닝 프로그램을 작성할 수 있는 대표적인 언어로 파이썬과 R이 있다. 물론 다른 언어들도 가능하지만 생산성이 떨어지고 생태계가 활발하지 않다.&lt;/p&gt;
-
-&lt;p&gt;저자는&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;개발 언어에 익숙하지 않으나 통계 분석에 능한 현업 사용자에게는 R을 추천한다. R은 통계 분석에 특화되었으며 많은 사용자들이 생성하고 검증해온 다양한 패키지를 보유하고 있기 때문이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;하지만 이제 머신러닝을 시작하려는 사람은 R보다는 파이썬을 권한다. 그 이유로는, 파이썬은 오픈 소스 계열의 전폭적인 지원을 받고 있어 쉽고 뛰어난 개발 생산성을 지닌다. 또한 인터프리터 언어로 속도는 느리지만, 뛰어난 확장성, 유연성, 호환성으로 인해 서버, 네트워크, 시스템, IOT, 심지어 데스크톱까지 다양한 영역에서 사용되고 있다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;고 말하고 있다.&lt;/p&gt;
-
-&lt;p&gt;뛰어난 성능의 머신러닝 기법 중 하나인 딥러닝의 프레임워크들이 파이썬 우선 정책으로 지원받고 있기 때문에 앞으로는 파이썬을 중심으로 머신러닝은 계속 발전할 것이다.&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">01. 머신러닝의 개념</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</title><link href="http://localhost:4000/ml-ch01-02" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-02</id><content type="html" xml:base="http://localhost:4000/ml-ch01-02">&lt;h2 id=&quot;02-파이썬-머신러닝-생태계를-구성하는-주요-패키지&quot;&gt;02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;머신러닝 패키지&lt;/li&gt;
-  &lt;li&gt;행렬/선형대수/통계 패키지&lt;/li&gt;
-  &lt;li&gt;데이터 핸들링&lt;/li&gt;
-  &lt;li&gt;시각화&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;파이썬-머신러닝을-위한-sw-설치&quot;&gt;파이썬 머신러닝을 위한 S/W 설치&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Anaconda&lt;/li&gt;
-  &lt;li&gt;파이썬 3.6이상&lt;/li&gt;
-  &lt;li&gt;Visual Studio Code&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지</summary></entry><entry><title type="html">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</title><link href="http://localhost:4000/ml-ch01-03" rel="alternate" type="text/html" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/ml-ch01-03</id><content type="html" xml:base="http://localhost:4000/ml-ch01-03">&lt;h2 id=&quot;03-넘파이&quot;&gt;03. 넘파이&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;넘파이(Numpy)는 머신러닝의 주요 알고리즘인 선형대수와 통계 기반 프로그램을 쉽게 작성 가능하도록 지원한다. 또한 C/C++ 등 Low Level 언어 기반의 호환 API를 제공한다.&lt;/p&gt;
-
-&lt;p&gt;넘파이는 배열 기반의 연산은 물론 다양한 데이터 핸들링 기능을 제공한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;넘파이-ndarray-개요&quot;&gt;넘파이 ndarray 개요&lt;/h3&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# numpy 모듈 import
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-                  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array2 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array2 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array3 type:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array3 array 형태:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[output]
-array1 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
-array1 array 형태: (3,)
-array2 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
-array2 array 형태: (2, 3)
-array3 type: &amp;lt;class &apos;numpy.ndarray&apos;&amp;gt;
-array3 array 형태: (1, 3)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;array1: {:0}차원, array2: {:1}차원, array3: {:2}차원&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="machinelearning" /><summary type="html">03. 넘파이</summary></entry><entry><title type="html">1. 도커란?</title><link href="http://localhost:4000/docker-ch01" rel="alternate" type="text/html" title="1. 도커란?" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-ch01</id><content type="html" xml:base="http://localhost:4000/docker-ch01">&lt;p&gt;도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다.
-Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.&lt;/p&gt;
-
-&lt;h2 id=&quot;11-가상-머신과-도커-컨테이너&quot;&gt;1.1 가상 머신과 도커 컨테이너&lt;/h2&gt;
-
-&lt;p&gt;기존의 가상머신은 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80&quot;&gt;하이퍼바이저&lt;/a&gt; 기술을 이용해 여러개의 운영체제를 하나의 호스트에 생성해 사용하는 방식이었다. 이는 ‘가상 머신’ 이라는 단위로 구별되고, 그 안에 운영체제를 설치하여 사용한다. 하이퍼바이저를 거쳐 게스트 운영체제를 사용하기 때문에 성능 손실이 발생한다. 또한 배포를 위한 이미지를 생성하는 경우에 크기가 크다. 그러므로 가상머신 이미지를 애플리케이션으로 배포하기에는 부담스럽다.&lt;/p&gt;
-
-&lt;p&gt;이런 문제를 해결 가능한 도커는 컨테이너라는 가상화 공간을 생성하기 위해 리눅스 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용함으로 프로세스 단위의 격리 환경을 만들어 성능 손실이 거의 없다. 호스트의 커널을 공유하여 사용하고 애플리케이션을 구동하는데 필요한 라이브러리 및 실행파일만 컨테이너에 포함하고 있기 때문에 이미지 용량 또한 타 가상머신에 비해 작다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_1_1.png&quot; alt=&quot;그림 1.1&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;12-도커를-시작해야-하는-이유&quot;&gt;1.2 도커를 시작해야 하는 이유&lt;/h2&gt;
-
-&lt;h3 id=&quot;121-애플리케이션-개발과-배포가-편해진다&quot;&gt;1.2.1 애플리케이션 개발과 배포가 편해진다&lt;/h3&gt;
-
-&lt;p&gt;도커 컨테이너 내부에서 소프트웨어를 설치하고 설정파일을 수정해도 호스트 OS에는 영향이 없다. 독립된 개발 환경을 보장 받는다는 것이다.&lt;/p&gt;
-
-&lt;p&gt;컨테이너 내부에서 작업 후 운영환경에 배포할 경우, ‘도커 이미지’만 패키지로 만들어 전달하기만 하면 된다. 패키지나 라이브러리 설치가 필요없다.&lt;/p&gt;
-
-&lt;h3 id=&quot;122-여러-애플리케이션의-독립성과-확장성이-높아진다&quot;&gt;1.2.2 여러 애플리케이션의 독립성과 확장성이 높아진다&lt;/h3&gt;
-
-&lt;p&gt;최근에 새롭게 떠오르는 서비스 방식인 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4&quot;&gt;마이크로서비스&lt;/a&gt; 구조는 여러 모듈을 독립된 형태로 구성하기 때문에 언어에 종속되지 않고 각 모듈 관리가 쉬워진다.&lt;/p&gt;
-
-&lt;p&gt;컨테이너는 마이크로서비스 구조에서 가장 많이 사용되고 있는 가상화 기술이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/pic_1_2.png&quot; alt=&quot;그림 1.2&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;13-도커-엔진-설치&quot;&gt;1.3 도커 엔진 설치&lt;/h2&gt;
-
-&lt;h3 id=&quot;131-도커엔진의-종류-및-버전&quot;&gt;1.3.1 도커엔진의 종류 및 버전&lt;/h3&gt;
-
-&lt;p&gt;도커엔진은 도커EE(Docker Enterprise Edition)와 도커CE(Community Edition)으로 구분되어 제공된다. 도커EE는 유료 기업용 솔루션이며, 각종 기술 지원 및 실제 서비스 단계에서 필요한 부가 기능을 함께 제공한다. 도커CE는 별도의 기술 지원 및 서비스를 제공하지 않고 핵심적인 기능만 사용 가능하며 무료이다.&lt;/p&gt;
-
-&lt;p&gt;이 책에서는 도커CE를 기준으로 설명한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;132---134-운영체제별-도커-설치&quot;&gt;1.3.2 - 1.3.4 운영체제별 도커 설치&lt;/h3&gt;
-
-&lt;p&gt;운영체제별 설치 방법 참조: &lt;a href=&quot;https://docs.docker.com/get-docker/&quot;&gt;docker docs&lt;/a&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">도커(Docker)는 컨테이너 기반의 오픈소스 가상 플랫폼이다. Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능 손실이 거의 없다.</summary></entry><entry><title type="html">프로그래머스 (스택/큐) - 프린터</title><link href="http://localhost:4000/stack_queue-4" rel="alternate" type="text/html" title="프로그래머스 (스택/큐) - 프린터" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/stack_queue-4</id><content type="html" xml:base="http://localhost:4000/stack_queue-4">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
+&lt;p&gt;이후 클라이언트에서 http://서버ip주소:8000 로 접속&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="unclassified" /><summary type="html">선행: CentOS에 Jupyter Notebook 설치</summary></entry><entry><title type="html">프로그래머스 (스택/큐) - 프린터</title><link href="http://localhost:4000/stack_queue-4" rel="alternate" type="text/html" title="프로그래머스 (스택/큐) - 프린터" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/stack_queue-4</id><content type="html" xml:base="http://localhost:4000/stack_queue-4">&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42587&quot;&gt;Programmers 문제 링크 바로가기&lt;/a&gt;&lt;/p&gt;
 
 &lt;details&gt;
@@ -401,6 +627,4 @@ Go언어로 작성되었고 기존에 쓰이던 가상머신과는 달리 성능
             &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
 
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out_order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">문제 Programmers 문제 링크 바로가기</summary></entry><entry><title type="html">시작하기 앞서</title><link href="http://localhost:4000/docker-0intro" rel="alternate" type="text/html" title="시작하기 앞서" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/docker-0intro</id><content type="html" xml:base="http://localhost:4000/docker-0intro">&lt;p&gt;이 글은 &lt;a href=&quot;https://wikibook.co.kr/docker-kube-rev/&quot;&gt;시작하세요! 도커/쿠버네티스&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/built/images/docker/book.png&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;</content><author><name>Jaekwang Van</name></author><category term="docker" /><summary type="html">이 글은 시작하세요! 도커/쿠버네티스 를 직접 따라해보고 요약 및 정리한 글 입니다.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jaekwang Van</name></author><category term="algorithm" /><summary type="html">문제 Programmers 문제 링크 바로가기</summary></entry></feed>

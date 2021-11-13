@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/unclassified/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-01T22:13:53+09:00</updated>
+  <updated>2021-11-13T18:13:20+09:00</updated>
   <id>http://localhost:4000/tag/unclassified/feed.xml</id>
 
   
@@ -30,6 +30,513 @@
   
   
 
+  
+    <entry>
+      <title type="html">Ubuntu에 nginx 설치</title>
+      <link href="http://localhost:4000/others-08" rel="alternate" type="text/html" title="Ubuntu에 nginx 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-08</id>
+      <content type="html" xml:base="http://localhost:4000/others-08">&lt;h2 id=&quot;nginx-install되어있는지-확인&quot;&gt;nginx install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ nginx --version
+-bash: nginx: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;nginx-설치&quot;&gt;nginx 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo apt-get install nginx
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+...
+
+After this operation, 52.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by
+presenting a list of cities, representing the time zones in which they are located.
+  1. Africa   3. Antarctica  5. Arctic  7. Atlantic  9. Indian    11. SystemV  13. Etc
+  2. America  4. Australia   6. Asia    8. Europe    10. Pacific  12. US
+Geographic area: 6
+
+...
+
+Please select the city or region corresponding to your time zone.
+
+  1. Aden      16. Brunei       31. Hong_Kong    46. Kuala_Lumpur  61. Pyongyang      76. Tehran
+  
+...
+
+  9. Baghdad   24. Dubai        39. Kamchatka    54. Nicosia       69. Seoul          84. Ust-Nera
+
+...
+
+Time zone: 69
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nginx -V
+nginx version: nginx/1.18.0 (Ubuntu)
+built with OpenSSL 1.1.1f  31 Mar 2020
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;nginx-실행&quot;&gt;nginx 실행&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo service nginx start
+ * Starting nginx nginx                                                                                        [ OK ] 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">nginx install되어있는지 확인 ubuntu@2cffa83792ef:~$ nginx --version -bash: nginx: command not found</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 git 설치</title>
+      <link href="http://localhost:4000/others-07" rel="alternate" type="text/html" title="Ubuntu에 git 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-07</id>
+      <content type="html" xml:base="http://localhost:4000/others-07">&lt;h2 id=&quot;git-install되어있는지-확인&quot;&gt;git install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ git --version
+-bash: git: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-설치&quot;&gt;git 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ sudo apt-get install git
+[sudo] password for ubuntu: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+...
+
+After this operation, 52.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git --version
+git version 2.25.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-설정&quot;&gt;git 설정&lt;/h2&gt;
+
+&lt;p&gt;깃에 push했을때 올라갈 내 정보를 입력&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.name [git_username]
+(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.mail [git_email]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-repository-가져오기&quot;&gt;git repository 가져오기&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ git clone [pj_url.git]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">git install되어있는지 확인 ubuntu@2cffa83792ef:~$ git --version -bash: git: command not found</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 django 설치</title>
+      <link href="http://localhost:4000/others-06" rel="alternate" type="text/html" title="Ubuntu에 django 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-06</id>
+      <content type="html" xml:base="http://localhost:4000/others-06">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;python-가상환경-설치&quot;&gt;python 가상환경 설치&lt;/h2&gt;
+
+&lt;h2 id=&quot;python-가상환경-활성화&quot;&gt;python 가상환경 활성화&lt;/h2&gt;
+
+&lt;h2 id=&quot;django-설치&quot;&gt;django 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ pip install django
+Collecting django
+  Downloading Django-3.2.9-py3-none-any.whl (7.9 MB)
+     |████████████████████████████████| 7.9 MB 2.3 MB/s 
+Collecting sqlparse&amp;gt;=0.2.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 2.1 MB/s 
+Collecting asgiref&amp;lt;4,&amp;gt;=3.3.2
+  Downloading asgiref-3.4.1-py3-none-any.whl (25 kB)
+Collecting pytz
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+     |████████████████████████████████| 503 kB 59.0 MB/s 
+Installing collected packages: sqlparse, asgiref, pytz, django
+Successfully installed asgiref-3.4.1 django-3.2.9 pytz-2021.3 sqlparse-0.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;django-버전-확인&quot;&gt;django 버전 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ python -m django --version
+3.2.9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version Python 3.8.10</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 python 가상환경 설치</title>
+      <link href="http://localhost:4000/others-05" rel="alternate" type="text/html" title="Ubuntu에 python 가상환경 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-05</id>
+      <content type="html" xml:base="http://localhost:4000/others-05">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;venv-모듈-설치&quot;&gt;venv 모듈 설치&lt;/h2&gt;
+
+&lt;p&gt;python3.6 이상 버전 부터는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python-venv&lt;/code&gt; 패키지를 설치하여 venv 모듈을 사용&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ pip --version
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+ubuntu@2cffa83792ef:~$ sudo apt install python3-venv
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3.8-venv
+The following NEW packages will be installed:
+  python3-venv python3.8-venv
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 6680 B of archives.
+After this operation, 38.9 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;가상환경을-저장할-디렉토리로-이동&quot;&gt;가상환경을 저장할 디렉토리로 이동&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ cd [dir_path]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 -m venv my-pj-venv     
+ubuntu@2cffa83792ef:~$ ls
+my-pj-venv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;가상환경-활성화&quot;&gt;가상환경 활성화&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ source my-pj-venv/bin/activate
+(my-pj-venv) ubuntu@2cffa83792ef:~$ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제 가상 환경이 활성화되었으므로 pip을 사용하여 패키지를 설치, 업그레이드 및 제거할 수 있습니다.
+가상 환경에서 pip3 대신 명령 pip을 사용하고 python3 대신 python을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;가상환경-비활성화&quot;&gt;가상환경 비활성화&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version Python 3.8.10</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 python 설치</title>
+      <link href="http://localhost:4000/others-04" rel="alternate" type="text/html" title="Ubuntu에 python 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-04</id>
+      <content type="html" xml:base="http://localhost:4000/others-04">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+-bash: python3: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;우분투-설치-관리자-apt-업데이트&quot;&gt;우분투 설치 관리자 apt 업데이트&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;python-설치&quot;&gt;python 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get install python3
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpython3-stdlib python3-minimal python3.8 python3.8-minimal
+
+...
+
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2365 kB of archives.
+After this operation, 6494 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pip-설치&quot;&gt;pip 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get install pip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting &apos;python3-pip&apos; instead of &apos;pip&apos;
+
+...
+
+0 upgraded, 94 newly installed, 0 to remove and 0 not upgraded.
+Need to get 63.5 MB of archives.
+After this operation, 281 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ pip --version
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 유저 추가하기</title>
+      <link href="http://localhost:4000/others-03" rel="alternate" type="text/html" title="Ubuntu에 유저 추가하기" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-03</id>
+      <content type="html" xml:base="http://localhost:4000/others-03">&lt;h2 id=&quot;adduser-username&quot;&gt;adduser [username]&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# adduser ubuntu
+Adding user `ubuntu&apos; ...
+Adding new group `ubuntu&apos; (1000) ...
+Adding new user `ubuntu&apos; (1000) with group `ubuntu&apos; ...
+Creating home directory `/home/ubuntu&apos; ...
+Copying files from `/etc/skel&apos; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;패스워드-입력&quot;&gt;패스워드 입력&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for ubuntu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;추가-정보-입력&quot;&gt;추가 정보 입력&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;입력-정보-확인&quot;&gt;입력 정보 확인&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Is the information correct? [Y/n] Y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;change-user&quot;&gt;change user&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# su - ubuntu
+ubuntu@2cffa83792ef:~$ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;생성한-user를-sudoer-파일에-추가-관리자-권한&quot;&gt;생성한 user를 sudoer 파일에 추가 (관리자 권한)&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ exit
+root@2cffa83792ef:/# vi /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#
+# This file MUST be edited with the &apos;visudo&apos; command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path=&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin&quot;
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on &quot;#include&quot; directives:
+
+#includedir /etc/sudoers.d
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+~                                                                                                                            
+&quot;/etc/sudoers&quot; [readonly] 30L, 755C                                                                        6,1           All
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;20번째 줄에 있는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root    ALL=(ALL:ALL) ALL&lt;/code&gt;아래에 다음을 추가&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu ALL=(ALL:ALL) ALL&lt;/code&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">adduser [username]</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">CentOS의 Jupyter Notebook 외부에서 접속하기</title>

@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/machinelearning/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-19T16:31:34+09:00</updated>
+  <updated>2021-11-19T20:21:32+09:00</updated>
   <id>http://localhost:4000/tag/machinelearning/feed.xml</id>
 
   
@@ -69,12 +69,10 @@
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;붓꽃 데이터 세트 크기:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;【Output】&lt;/p&gt;
-
-&lt;p&gt;붓꽃 데이터 세트 크기: 150&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;【Output】
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+붓꽃 데이터 세트 크기: 150
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;/p&gt;
 
 &lt;p&gt;전체 붓꽃 데이터는 모두 150개이기 때문에 학습용 데이터 세트는 120개, 검증 테스트 데이터 세트는 30개로 분할된다.
 KFold객체는 split()을 호출하면 학습용/검증용 데이터로 분할할 수 있는 인덱스를 반환한다.&lt;/p&gt;
@@ -105,10 +103,9 @@ KFold객체는 split()을 호출하면 학습용/검증용 데이터로 분할�
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;## 평균 검증 정확도:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv_accuracy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;【Output】&lt;/p&gt;
-
-&lt;p&gt;#1 교차 검증 정확도 :1.0, 학습 데이터 크기: 120, 검증 데이터 크기: 30
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+#1 교차 검증 정확도 :1.0, 학습 데이터 크기: 120, 검증 데이터 크기: 30
 #1 검증 세트 인덱스:[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
  24 25 26 27 28 29]&lt;/p&gt;
 
@@ -130,8 +127,8 @@ KFold객체는 split()을 호출하면 학습용/검증용 데이터로 분할�
 
 &lt;p&gt;##평균 검증 정확도: 0.9&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;stratified-k-폴드&quot;&gt;Stratified K 폴드&lt;/h4&gt;
 
@@ -152,14 +149,13 @@ KFold객체는 split()을 호출하면 학습용/검증용 데이터로 분할�
 &lt;span class=&quot;n&quot;&gt;iris_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;label&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value_counts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;【Output】&lt;/p&gt;
+&lt;p&gt;【Output】 &lt;br /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;2      50 &lt;br /&gt;
+&lt;p&gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+2      50 &lt;br /&gt;
 1      50 &lt;br /&gt;
-0      50&lt;/p&gt;
-
-&lt;hr /&gt;
+0      50 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;레이블 값은 0, 1, 2 모두 50개로 동일하다.
 Setosa, Versicolor, Virginica 모두 50개 인 것이다.
@@ -176,10 +172,9 @@ Setosa, Versicolor, Virginica 모두 50개 인 것이다.
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;검증 레이블 데이터 분포:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value_counts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;【Output】&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;## 교차 검증: 1 &lt;br /&gt;
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+## 교차 검증: 1 &lt;br /&gt;
 학습 레이블 데이터 분포: &lt;br /&gt;
  2    50 &lt;br /&gt;
 1    50 &lt;br /&gt;
@@ -196,9 +191,8 @@ Setosa, Versicolor, Virginica 모두 50개 인 것이다.
  1    50 &lt;br /&gt;
 0    50 &lt;br /&gt;
 검증 레이블 데이터 분포: &lt;br /&gt;
- 2    50 &lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
+ 2    50 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;교차검증: 1의 경우는 학습 레이블로 1, 2 값이 각각 50개가 추출되고 검증 레이블로 0이 50개 추출되었다. 학습 레이블로는 1, 2밖에 없으므로 0의 경우는 전혀 학습하지 못한다. 반대로 검증 레이블은 0 밖에 없으므로 학습 모델은 0을 예측하지 못한다. 이런 방법으로 데이터 세트를 분할하면 검증 예측도는 0이 될 수 밖에 없다.&lt;/p&gt;
 
@@ -218,10 +212,9 @@ Setosa, Versicolor, Virginica 모두 50개 인 것이다.
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;검증 레이블 데이터 분포:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value_counts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;【Output】&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;## 교차 검증: 1 &lt;br /&gt;
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+## 교차 검증: 1 &lt;br /&gt;
 학습 레이블 데이터 분포:  &lt;br /&gt;
  2    33 &lt;br /&gt;
 1    33 &lt;br /&gt;
@@ -247,9 +240,8 @@ Setosa, Versicolor, Virginica 모두 50개 인 것이다.
 검증 레이블 데이터 분포: &lt;br /&gt;
  2    16 &lt;br /&gt;
 1    16 &lt;br /&gt;
-0    16 &lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
+0    16 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;출력 결과를 보면 학습 레이블과 검증 레이블 데이터 값의 분포도가 동일하게 할당 되었음을 볼 수 있다.&lt;/p&gt;
 
@@ -285,10 +277,9 @@ Setosa, Versicolor, Virginica 모두 50개 인 것이다.
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;## 평균 검증 정확도:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv_accuracy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;【Output】&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;#1 교차 검증 정확도 :0.9804, 학습 데이터 크기: 99, 검증 데이터 크기: 51 &lt;br /&gt;
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;
+#1 교차 검증 정확도 :0.9804, 학습 데이터 크기: 99, 검증 데이터 크기: 51 &lt;br /&gt;
 #1 검증 세트 인덱스:[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  50
   51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66 100 101
  102 103 104 105 106 107 108 109 110 111 112 113 114 115 116]&lt;/p&gt;
@@ -305,13 +296,274 @@ Setosa, Versicolor, Virginica 모두 50개 인 것이다.
 
 &lt;p&gt;## 교차 검증별 정확도: [0.9804 0.9216 0.9792]&lt;/p&gt;
 
-&lt;p&gt;## 평균 검증 정확도: 0.9604&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;## 평균 검증 정확도: 0.9604 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;3개의 Stratified K 폴드로 교차 검증한 결과 평균 검증 정확도가 약 96.04%로 측정되었다. 일반적인 분류(Classification)에서의 교차 검증은 K 폴드가 아니라 Stratified K 폴드로 분할되어야 한다.&lt;/p&gt;
 
-&lt;p&gt;하지만 회귀(Regression)에서는 Stratified K 폴드가 지원되지 않는다. 그 이유는 회귀의 결정값은 이산값 형태의 레이블이 아니라 연속된 숫자값이기 때문에 결정값별로 분포를 정하는 의미가 없기 때문이다.&lt;/p&gt;</content>
+&lt;p&gt;하지만 회귀(Regression)에서는 Stratified K 폴드가 지원되지 않는다. 그 이유는 회귀의 결정값은 이산값 형태의 레이블이 아니라 연속된 숫자값이기 때문에 결정값별로 분포를 정하는 의미가 없기 때문이다.&lt;/p&gt;
+
+&lt;h4 id=&quot;교차-검증을-보다-간편하게---cross_val_score&quot;&gt;교차 검증을 보다 간편하게 - cross_val_score()&lt;/h4&gt;
+
+&lt;p&gt;사이킷런은 보다 교차 검증을 편리하게 할 수 있는 API를 제공한다. 대표적으로 cross_val_score()이다.&lt;/p&gt;
+
+&lt;p&gt;KFold로 데이터를 학습하고 예측하는 과정을 보면&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;폴드 세트를 설정&lt;/li&gt;
+  &lt;li&gt;for 루프로 학습 및 테스트 데이터의 인덱스를 추출&lt;/li&gt;
+  &lt;li&gt;반복적으로 학습과 예측을 수행&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;로 볼 수 있다.&lt;/p&gt;
+
+&lt;p&gt;cross_val_score()는 이런 일련의 과정을 한꺼번에 수행해주는 API이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.tree&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cross_val_score&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cross_validate&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_iris&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;iris_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_iris&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dt_clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;156&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 성능 지표는 정확도(accuracy) , 교차 검증 세트는 3개 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cross_val_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt_clf&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scoring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;accuracy&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;교차 검증별 정확도:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;평균 검증 정확도:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;
+교차 검증별 정확도: [0.9804 0.9216 0.9792] &lt;br /&gt;
+평균 검증 정확도: 0.9604 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&lt;/p&gt;
+
+&lt;h4 id=&quot;gridsearch-cv---교차-검증과-최적-하이퍼-파라미터-튜닝을-한번에&quot;&gt;GridSearch CV - 교차 검증과 최적 하이퍼 파라미터 튜닝을 한번에&lt;/h4&gt;
+
+&lt;p&gt;하이퍼 파라미터는 머신러닝 알고리즘의 주요 구성 요소이며, 이 값을 조정해 알고리즘의 에측 성능을 개선할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;GridSearch에서 Grid는 격자라는 뜻으로, 촘촘하게 파라미터를 입력하면서 테스트 하는 방식을 말한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;grid_parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;max_depth&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                    &lt;span class=&quot;s&quot;&gt;&apos;min_samples_split&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;하이퍼 파라미터는 다음과 같이 순차적으로 적용된다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;순번&lt;/th&gt;
+      &lt;th&gt;max_depth&lt;/th&gt;
+      &lt;th&gt;min_samples_split&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;GridSearchCV는 교차 검증을 기반으로 이 하이퍼 파라미터의 최적 값을 찾게 해준다. 즉, 데이터 세트를 cross-validation을 위한 학습/테스트 세트로 자동으로 분할한 뒤에 하이퍼 파라미터 그리드에 기술된 모든 파라미터를 순차적으로 적용해 최적의 파라미터를 찾을 수 있게 해준다. 하지만 순차적으로 파라미터를 테스트하므로 수행시간이 상당히 오래걸린다.&lt;/p&gt;
+
+&lt;p&gt;GridSearchCV 클래스의 생성자로 들어가는 주요 파라미터는 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;estimator: classifier, regressor, pipline이 사용될 수 있다.&lt;/li&gt;
+  &lt;li&gt;param_grid: key + 리스트 값을 가지는 딕셔너리가 주어진다. estimator의 튜닝을 위해 파라미터명과 사용될 여러 파라미터 값을 지정한다.&lt;/li&gt;
+  &lt;li&gt;scoring: 에측 성능을 측정할 평가 방법을 지정한다.&lt;/li&gt;
+  &lt;li&gt;cv: 교차 검증을 위해 분할되는 학습/테스트 세트의 개수&lt;/li&gt;
+  &lt;li&gt;refit: default는 True이며, True로 생성 시 가장 최적의 하이퍼 파라미터를 찾은 뒤 입력된 estimator 객체를 해당 하이퍼 파라미터로 재학습시킨다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;다음의 예제를 통해 GridSearchCV API의 사용법을 익혀보자.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_iris&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.tree&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 데이터를 로딩하고 학습데이타와 테스트 데이터 분리
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_iris&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iris_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;121&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dtree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;### parameter 들을 dictionary 형태로 설정
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;max_depth&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;min_samples_split&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;train_test_split()을 이용해 학습 데이터와 테스트 데이터를 분리
+DecisionTreeClassifier의 중요 파라미터인 max_depth와 min_sample_split의 값을 변화시키면서 최적화를 진행한다. 딕셔너리 형태로 String 형태의 명칭을 key, list형태의 하이퍼 파라미터를 value로 설정한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# param_grid의 하이퍼 파라미터들을 3개의 train, test set fold 로 나누어서 테스트 수행 설정.  
+### refit=True 가 default 임. True이면 가장 좋은 파라미터 설정으로 재 학습 시킴.  
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_dtree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param_grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;refit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 붓꽃 Train 데이터로 param_grid의 하이퍼 파라미터들을 순차적으로 학습/평가.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_dtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# GridSearchCV 결과 추출하여 DataFrame으로 변환
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_dtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv_results_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scores_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;params&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;mean_test_score&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;rank_test_score&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; \
+           &lt;span class=&quot;s&quot;&gt;&apos;split0_test_score&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;split1_test_score&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;split2_test_score&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;params&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;mean_test_score&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;rank_test_score&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;split0_test_score&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;split1_test_score&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;split2_test_score&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;{‘max_depth’: 1, ‘min_samples_split’: 2}&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.700000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.700&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.70&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;{‘max_depth’: 1, ‘min_samples_split’: 3}&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.700000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.700&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.70&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;{‘max_depth’: 2, ‘min_samples_split’: 2}&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.958333&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.925&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.95&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;{‘max_depth’: 2, ‘min_samples_split’: 3}&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.958333&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.925&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.95&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;{‘max_depth’: 3, ‘min_samples_split’: 2}&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.966667&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.950&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.95&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;{‘max_depth’: 3, ‘min_samples_split’: 3}&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.966667&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.950&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.95&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;학습 데이터 세트를 GridSearchCV 객체의 fit 메서드 인자로 입력한다.
+GridSearchCV 객체의 fit(학습 데이터 세트) 메서드를 수행하면 학습 데이터를 cv에 기술된 폴딩 세트로 분할해 param_grid에 기술된 하이퍼 파라미터를 순차적으로 변경하면서 학습/평가를 수행하고 그 결과를 cv_results_속성에 기록한다. cv_results_를 Pandas의 DataFrame 형태로 변환하면 위의 【Output】과 같다.&lt;/p&gt;
+
+&lt;p&gt;총 6개의 결과를 볼 수 있고, max_depth와 min_samples_split을 순차적으로 총 6번 변경하면서 학습/평가 했음을 알 수 있다.&lt;/p&gt;
+
+&lt;p&gt;‘params’ 컬럼에는 수행할 때마다 적용된 하이퍼 파라미터값을 갖고 있다.&lt;/p&gt;
+
+&lt;p&gt;Dataframe의 index 4와 5의 행을 보면 ‘rank_test_score’ 컬럼 값이 1이다. 예측 성능이 공동 1위라는 의미이다.&lt;/p&gt;
+
+&lt;p&gt;‘mean_test_score’값은 cv=3에 의해 ‘split0_test_score’, ‘split1_test_score’, ‘split2_test_score’ 세개의 폴딩 세트에서의 성능의 평균이다.&lt;/p&gt;
+
+&lt;p&gt;주요 컬럼별 의미를 아래와 같이 설명한다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;params: 수행할 때마다 적용된 개별 하이퍼 파라미터값을 나타낸다.&lt;/li&gt;
+  &lt;li&gt;rank_test_score: 하이퍼 파라미터별 score의 순위이다.&lt;/li&gt;
+  &lt;li&gt;mean_test_score: 개별 하이퍼 파라미터별로 CV의 폴딩 테스트 세트들의 평가 평균값이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;GridSearchCV 객체의 fit()을 수행하면 최고 성능을 나타낸 하이퍼 파라미터값과 평가 결과를 각각 best_params_, best_score_에 기록된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;GridSearchCV 최적 파라미터:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid_dtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_params_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;GridSearchCV 최고 정확도: {0:.4f}&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_dtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_score_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;
+GridSearchCV 최적 파라미터: {‘max_depth’: 3, ‘min_samples_split’: 2}&lt;br /&gt;
+GridSearchCV 최고 정확도: 0.9667 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;GridSearchCV 객체의 생성 파라미터로 refit=True를 했기 때문에 최적 성능을 나타내는 하이퍼 파라미터로 Estimator를 학습해 best_estimator_로 저장되었다.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# GridSearchCV의 refit으로 이미 학습이 된 estimator 반환
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid_dtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_estimator_&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# GridSearchCV의 best_estimator_는 이미 최적 하이퍼 파라미터로 학습이 됨
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;테스트 데이터 세트 정확도: {0:.4f}&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accuracy_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;【Output】 &lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;
+테스트 데이터 세트 정확도: 0.9667&lt;br /&gt;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;별도의 테스트 데이터 세트로 정확도 측정을 한 결과 약 96.67%의 결과가 도출됐다. 일반적으로 학습 데이터를 GridSearchCV를 이용해 최적 하이퍼 파라미터 튜닝을 수행한 뒤에 별도의 테스트 세트에서 이를 평가하는 것이 일반적인 머신러닝 모델 적용 방법이다.&lt;/p&gt;</content>
 
       
       

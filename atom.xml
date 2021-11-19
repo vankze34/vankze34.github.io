@@ -8,6 +8,147 @@
     
       
       <item>
+        <title>Chapter02 - 04. Model Selection 모듈 소개 (1)</title>
+        
+          <description>&lt;h3 id=&quot;교차-검증&quot;&gt;교차 검증&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Thu, 18 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-ch02-04_2</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-ch02-04_2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Chapter02 - 04. Model Selection 모듈 소개 (1)</title>
+        
+          <description>&lt;h3 id=&quot;학습테스트-데이터-셋-분리---train_test_split&quot;&gt;학습/테스트 데이터 셋 분리 - train_test_split()&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Thu, 18 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-ch02-04_1</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-ch02-04_1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Chapter02 - 03. 사이킷런의 기반 프레임워크 익히기</title>
+        
+          <description>&lt;h3 id=&quot;estimator-이해-및-fit-predict-메서드&quot;&gt;Estimator 이해 및 fit(), predict() 메서드&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Thu, 18 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-ch02-03</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-ch02-03</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>1장 컴퓨터는 데이터에서 배운다</title>
+        
+          <description>&lt;h3 id=&quot;여기서-다루는-것들&quot;&gt;여기서 다루는 것들&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;머신 러닝의 일반적 개념 이해하기&lt;/li&gt;
+  &lt;li&gt;세 종류의 학습과 기본 용어 알아보기&lt;/li&gt;
+  &lt;li&gt;성공적인 머신 러닝 시스템을 설계하는 수 요소 알아보기&lt;/li&gt;
+  &lt;li&gt;데이터 분석과 머신 러닝을 위한 파이썬을 설치하고 설정하기&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-ch01-01_bk</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-ch01-01_bk</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기</title>
+        
+          <description>&lt;p&gt;분류(Classification)는 대표적인 지도학습(Supervised Learning) 방법의 하나이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-ch02-02</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-ch02-02</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Chapter02 - 01. 사이킷런 소개와 특징</title>
+        
+          <description>&lt;p&gt;사이킷런(scikit-learn)은 오랜 기간 파이썬 세계에서 대표적인 머신러닝 라이브러리로 인정받았다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-ch02-01</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-ch02-01</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Ubuntu에 Postgresql 설치</title>
+        
+          <description>&lt;h2 id=&quot;postgresql과-postgresql-contrib패키지-설치&quot;&gt;postgresql과 postgresql-contrib패키지 설치&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/others-11</link>
+        <guid isPermaLink="true">http://localhost:4000/others-11</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Django 배포</title>
+        
+          <description>&lt;h3 id=&quot;django는-웹-서버와-직접-통신할-수-없어서-둘-사이에-wsgi를-두어야-한다&quot;&gt;Django는 웹 서버와 직접 통신할 수 없어서 둘 사이에 WSGI를 두어야 한다.&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/others-10</link>
+        <guid isPermaLink="true">http://localhost:4000/others-10</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Ubuntu에 uwsgi 설치</title>
+        
+          <description>&lt;h2 id=&quot;가상환경-활성화&quot;&gt;가상환경 활성화&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/others-09</link>
+        <guid isPermaLink="true">http://localhost:4000/others-09</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Ubuntu에 nginx 설치</title>
         
           <description>&lt;h2 id=&quot;nginx-install되어있는지-확인&quot;&gt;nginx install되어있는지 확인&lt;/h2&gt;
@@ -82,10 +223,7 @@ Python 3.8.10
       <item>
         <title>Ubuntu에 python 설치</title>
         
-          <description>&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
--bash: python3: command not found
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+          <description>&lt;h1 id=&quot;apt-get으로-설치&quot;&gt;apt-get으로 설치&lt;/h1&gt;
 
 </description>
         
@@ -156,6 +294,21 @@ $ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
         <link>
         http://localhost:4000/others-01</link>
         <guid isPermaLink="true">http://localhost:4000/others-01</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>시작하기 앞서</title>
+        
+          <description>&lt;p&gt;이 글은 &lt;a href=&quot;https://www.gilbut.co.kr/book/view?bookcode=BN003058&amp;amp;keyword=%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%20%EA%B5%90%EA%B3%BC%EC%84%9C&amp;amp;collection=GB_BOOK&quot;&gt;머신 러닝 교과서 with 파이썬, 사이킷런, 텐서플로(개정 3판)&lt;/a&gt; 를 직접 따라해보고 요약 및 정리한 글 입니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 28 Oct 2021 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/ml-0intro_bk</link>
+        <guid isPermaLink="true">http://localhost:4000/ml-0intro_bk</guid>
       </item>
       
     

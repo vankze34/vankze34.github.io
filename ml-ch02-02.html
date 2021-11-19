@@ -11,7 +11,7 @@
 
 
 
-    <title>Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</title>
+    <title>Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,58 +36,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="데이터 사이언스 훈련장" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/ml-ch01-02" />
+    <link rel="canonical" href="http://localhost:4000/ml-ch02-02" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Vans DS Gym" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" />
-    <meta property="og:description" content="02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지
-
-
-
-  머신러닝 패키지
-  행렬/선형대수/통계 패키지
-  데이터 핸들링
-  시각화
-
-
-파이썬 머신러닝을 위한 S/W 설치
-
-
-  Anaconda
-  파이썬 3.6이상
-  Visual Studio Code
-
-" />
-    <meta property="og:url" content="http://localhost:4000/ml-ch01-02" />
+    <meta property="og:title" content="Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기" />
+    <meta property="og:description" content="분류(Classification)는 대표적인 지도학습(Supervised Learning) 방법의 하나이다. 새로운 주피터 노트북 생성 사이킷런에서 사용할 모듈 임포트 의사 결정 트리를 ML 알고리즘: DecisionTreeClassifier 데이터 세트 분리(학습, 테스트): train_test_split() 함수 from sklearn.datasets import load_iris from sklearn.tree import DecisionTreeClassifier from sklearn.model_selection import train_test_split import pandas as pd # 붓꽃 데이터 세트를 로딩합니다. iris = load_iris()" />
+    <meta property="og:url" content="http://localhost:4000/ml-ch02-02" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-10-28T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-10-28T00:00:00+09:00" />
+    <meta property="article:published_time" content="2021-11-17T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-11-17T00:00:00+09:00" />
     <meta property="article:tag" content="Machinelearning" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" />
-    <meta name="twitter:description" content="02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지
-
-
-
-  머신러닝 패키지
-  행렬/선형대수/통계 패키지
-  데이터 핸들링
-  시각화
-
-
-파이썬 머신러닝을 위한 S/W 설치
-
-
-  Anaconda
-  파이썬 3.6이상
-  Visual Studio Code
-
-" />
+    <meta name="twitter:title" content="Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기" />
+    <meta name="twitter:description" content="분류(Classification)는 대표적인 지도학습(Supervised Learning) 방법의 하나이다. 새로운 주피터 노트북 생성 사이킷런에서 사용할 모듈 임포트 의사 결정 트리를 ML 알고리즘: DecisionTreeClassifier 데이터 세트 분리(학습, 테스트): train_test_split() 함수 from sklearn.datasets import load_iris from sklearn.tree import DecisionTreeClassifier from sklearn.model_selection import train_test_split import pandas as pd # 붓꽃 데이터 세트를 로딩합니다. iris = load_iris()" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -108,7 +74,7 @@
         "name": "Vans DS Gym",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/ml-ch01-02",
+    "url": "http://localhost:4000/ml-ch02-02",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/blog-cover1.png",
@@ -117,26 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/ml-ch01-02"
+        "@id": "http://localhost:4000/ml-ch02-02"
     },
-    "description": "02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지
-
-
-
-  머신러닝 패키지
-  행렬/선형대수/통계 패키지
-  데이터 핸들링
-  시각화
-
-
-파이썬 머신러닝을 위한 S/W 설치
-
-
-  Anaconda
-  파이썬 3.6이상
-  Visual Studio Code
-
-"
+    "description": "분류(Classification)는 대표적인 지도학습(Supervised Learning) 방법의 하나이다. 새로운 주피터 노트북 생성 사이킷런에서 사용할 모듈 임포트 의사 결정 트리를 ML 알고리즘: DecisionTreeClassifier 데이터 세트 분리(학습, 테스트): train_test_split() 함수 from sklearn.datasets import load_iris from sklearn.tree import DecisionTreeClassifier from sklearn.model_selection import train_test_split import pandas as pd # 붓꽃 데이터 세트를 로딩합니다. iris = load_iris()"
 }
     </script>
 
@@ -149,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기" href="/feed.xml" />
 
 
 </head>
@@ -213,7 +162,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="28 October 2021">28 October 2021</time>
+                    <time class="post-full-meta-date" datetime="17 November 2021">17 November 2021</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -223,7 +172,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</h1>
+                <h1 class="post-full-title">Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기</h1>
             </header>
 
             <!--
@@ -232,23 +181,146 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="02-파이썬-머신러닝-생태계를-구성하는-주요-패키지">02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지</h2>
+                    <p>분류(Classification)는 대표적인 지도학습(Supervised Learning) 방법의 하나이다.</p>
+
+<ol>
+  <li>
+    <p>새로운 주피터 노트북 생성</p>
+  </li>
+  <li>
+    <p>사이킷런에서 사용할 모듈 임포트</p>
+    <ul>
+      <li>의사 결정 트리를 ML 알고리즘: DecisionTreeClassifier</li>
+      <li>데이터 세트 분리(학습, 테스트): train_test_split() 함수</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># 붓꽃 데이터 세트를 로딩합니다. 
+</span><span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+
+<span class="c1"># iris.data는 Iris 데이터 세트에서 피처(feature)만으로 된 데이터를 numpy로 가지고 있습니다. 
+</span><span class="n">iris_data</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">data</span>
+
+<span class="c1"># iris.target은 붓꽃 데이터 세트에서 레이블(결정 값) 데이터를 numpy로 가지고 있습니다. 
+</span><span class="n">iris_label</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">target</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'iris target값:'</span><span class="p">,</span> <span class="n">iris_label</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'iris target명:'</span><span class="p">,</span> <span class="n">iris</span><span class="p">.</span><span class="n">target_names</span><span class="p">)</span>
+
+<span class="c1"># 붓꽃 데이터 세트를 자세히 보기 위해 DataFrame으로 변환합니다. 
+</span><span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="p">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">target</span>
+<span class="n">iris_df</span><span class="p">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<p>【Output】</p>
+
+<p>iris target값: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2]
+iris target명: [‘setosa’ ‘versicolor’ ‘virginica’]</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right"> </th>
+      <th style="text-align: right">sepal length (cm)</th>
+      <th style="text-align: right">sepal width (cm)</th>
+      <th style="text-align: right">petal length (cm)</th>
+      <th style="text-align: right">petal width (cm)</th>
+      <th style="text-align: right">label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">5.1</td>
+      <td style="text-align: right">3.5</td>
+      <td style="text-align: right">1.4</td>
+      <td style="text-align: right">0.2</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4.9</td>
+      <td style="text-align: right">3.0</td>
+      <td style="text-align: right">1.4</td>
+      <td style="text-align: right">0.2</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">4.7</td>
+      <td style="text-align: right">3.2</td>
+      <td style="text-align: right">1.3</td>
+      <td style="text-align: right">0.2</td>
+      <td style="text-align: right">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p>feature에는 sepal length, sepal width, petal length, petal width가 있다. 레이블(Label, 결정값)은 0, 1, 2 세 종류의 값으로 되어 있으며 0: Setosa, 1: versicolor, 2: virginica를 의미한다.</p>
+
+<h3 id="학습용-데이터와-테스트용-데이터를-분리">학습용 데이터와 테스트용 데이터를 분리</h3>
+
+<p>학습용 데이터와 테스트용 데이터는 반드시 분리해야 된다.
+학습된 모델이 얼마나 뛰어난 성능을 갖는지 평가하기 위해서이다.
+사이킷 런에서 제공하는 train_test_split()을 이용하여 분리.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">iris_data</span><span class="p">,</span> <span class="n">iris_label</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>random_state는 호출할 때 마다 지정된 seed에 의해 일정한 데이터로 분리하기 위해서 사용한다. 지정하지 않으면 매번 랜덤으로 분리된다.</p>
+
+<h3 id="의사-결정-트리를-이용해-학습과-예측을-수행">의사 결정 트리를 이용해 학습과 예측을 수행</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># DecisionTreeClassifier 객체 생성
+</span><span class="n">dt_clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 학습 수행
+</span><span class="n">df_clf</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>학습이 완료되었다.</p>
+
+<p>예측은 반드시 학습 데이터에서 사용한 적이 없는 데이터를 사용해야 하며, 일반적으로는 테스트 데이터 셋을 이용한다. 위에서 분리한 테스트 데이터를 이용하자.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 학습이 완료된 DecisionTreeClassifier 객체에서 테스트 데이터 세트로 예측 수행
+</span><span class="n">pred</span> <span class="o">=</span> <span class="n">dt_clf</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>성능 평가를 해보자. 정확도는 예측 결과가 실제 레이블 값과 얼마나 정확하게 맞는지를 평가하는 지표이다. 정확도 측정을 위해 accuracy_score()함수 사용</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'예측 정확도: {0:.4f}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<hr />
+<p>【Output】</p>
+
+<p>예측 정확도: 0.9333</p>
+
 <hr />
 
-<ul>
-  <li>머신러닝 패키지</li>
-  <li>행렬/선형대수/통계 패키지</li>
-  <li>데이터 핸들링</li>
-  <li>시각화</li>
-</ul>
-
-<h3 id="파이썬-머신러닝을-위한-sw-설치">파이썬 머신러닝을 위한 S/W 설치</h3>
-
-<ul>
-  <li>Anaconda</li>
-  <li>파이썬 3.6이상</li>
-  <li>Visual Studio Code</li>
-</ul>
+<h4 id="예측-프로세스-정리">예측 프로세스 정리</h4>
+<ol>
+  <li>데이터 셋 분리</li>
+  <li>모델 학습</li>
+  <li>예측 수행</li>
+  <li>평가</li>
+</ol>
 
                 </div>
             </section>
@@ -289,9 +361,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'http://localhost:4000/ml-ch01-02';
-                            var this_page_identifier = '/ml-ch01-02';
-                            var this_page_title = 'Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)';
+                            var this_page_url = 'http://localhost:4000/ml-ch02-02';
+                            var this_page_identifier = '/ml-ch02-02';
+                            var this_page_title = 'Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -370,9 +442,6 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
-                                        
-                                        
-                                    
                                   
                                 
                                   
@@ -421,6 +490,9 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
                                     
                                   
                                 
@@ -480,7 +552,7 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/ml-ch01-03">
+            <a class="post-card-content-link" href="/ml-ch01-01_bk">
                 <header class="post-card-header">
                     
                         
@@ -490,11 +562,16 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</h2>
+                    <h2 class="post-card-title">1장 컴퓨터는 데이터에서 배운다</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>03. 넘파이
+                        <p>여기서 다루는 것들
+
+  머신 러닝의 일반적 개념 이해하기
+  세 종류의 학습과 기본 용어 알아보기
+  성공적인 머신 러닝 시스템을 설계하는 수 요소 알아보기
+  데이터 분석과 머신 러닝을 위한 파이썬을 설치하고 설정하기
 
 
 </p>
@@ -508,7 +585,7 @@ into the {body} of the default.hbs template -->
                 <span class="reading-time">
                     
                     
-                      1 min read
+                      2 min read
                     
                 </span>
             </footer>
@@ -524,7 +601,7 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/ml-ch01-01">
+            <a class="post-card-content-link" href="/ml-ch02-01">
                 <header class="post-card-header">
                     
                         
@@ -534,12 +611,11 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)</h2>
+                    <h2 class="post-card-title">Chapter02 - 01. 사이킷런 소개와 특징</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>01. 머신러닝의 개념
-
+                        <p>사이킷런(scikit-learn)은 오랜 기간 파이썬 세계에서 대표적인 머신러닝 라이브러리로 인정받았다.
 
 </p>
                     
@@ -574,18 +650,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</div>
+    <div class="floating-header-title">Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Chapter01+%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EA%B8%B0%EB%B0%98%EC%9D%98+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EA%B3%BC+%EC%83%9D%ED%83%9C%EA%B3%84%EC%9D%98+%EC%9D%B4%ED%95%B4+%282%29&amp;url=https://vankze34.github.io/ml-ch01-02"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Chapter02+-+02+%EC%B2%AB+%EB%B2%88%EC%A7%B8+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+%EB%A7%8C%EB%93%A4%EC%96%B4+%EB%B3%B4%EA%B8%B0+-+%EB%B6%93%EA%BD%83+%ED%92%88%EC%A2%85+%EC%98%88%EC%B8%A1%ED%95%98%EA%B8%B0&amp;url=https://vankze34.github.io/ml-ch02-02"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/ml-ch01-02"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/ml-ch02-02"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

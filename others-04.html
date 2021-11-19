@@ -43,7 +43,7 @@
     <meta property="og:site_name" content="Vans DS Gym" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ubuntu에 python 설치" />
-    <meta property="og:description" content="python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found 우분투 설치 관리자 apt 업데이트 ubuntu@2cffa83792ef:~$ sudo apt-get update python 설치 ubuntu@2cffa83792ef:~$ sudo apt-get install python3 Reading package lists... Done Building dependency tree Reading state information... Done The following additional packages will be installed: libpython3-stdlib python3-minimal python3.8 python3.8-minimal ..." />
+    <meta property="og:description" content="apt-get으로 설치 python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found 우분투 설치 관리자 apt 업데이트 ubuntu@2cffa83792ef:~$ sudo apt-get update python 설치 ubuntu@2cffa83792ef:~$ sudo apt-get install python3 Reading package lists... Done Building dependency tree Reading state information... Done The following additional packages will be installed: libpython3-stdlib python3-minimal python3.8" />
     <meta property="og:url" content="http://localhost:4000/others-04" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -53,7 +53,7 @@
     <meta property="article:tag" content="Unclassified" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ubuntu에 python 설치" />
-    <meta name="twitter:description" content="python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found 우분투 설치 관리자 apt 업데이트 ubuntu@2cffa83792ef:~$ sudo apt-get update python 설치 ubuntu@2cffa83792ef:~$ sudo apt-get install python3 Reading package lists... Done Building dependency tree Reading state information... Done The following additional packages will be installed: libpython3-stdlib python3-minimal python3.8 python3.8-minimal ..." />
+    <meta name="twitter:description" content="apt-get으로 설치 python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found 우분투 설치 관리자 apt 업데이트 ubuntu@2cffa83792ef:~$ sudo apt-get update python 설치 ubuntu@2cffa83792ef:~$ sudo apt-get install python3 Reading package lists... Done Building dependency tree Reading state information... Done The following additional packages will be installed: libpython3-stdlib python3-minimal python3.8" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -85,7 +85,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/others-04"
     },
-    "description": "python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found 우분투 설치 관리자 apt 업데이트 ubuntu@2cffa83792ef:~$ sudo apt-get update python 설치 ubuntu@2cffa83792ef:~$ sudo apt-get install python3 Reading package lists... Done Building dependency tree Reading state information... Done The following additional packages will be installed: libpython3-stdlib python3-minimal python3.8 python3.8-minimal ..."
+    "description": "apt-get으로 설치 python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found 우분투 설치 관리자 apt 업데이트 ubuntu@2cffa83792ef:~$ sudo apt-get update python 설치 ubuntu@2cffa83792ef:~$ sudo apt-get install python3 Reading package lists... Done Building dependency tree Reading state information... Done The following additional packages will be installed: libpython3-stdlib python3-minimal python3.8"
 }
     </script>
 
@@ -181,7 +181,9 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="python이-install되어있는지-확인">python이 install되어있는지 확인</h2>
+                    <h1 id="apt-get으로-설치">apt-get으로 설치</h1>
+
+<h2 id="python이-install되어있는지-확인">python이 install되어있는지 확인</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu@2cffa83792ef:~$ python3 --version
 -bash: python3: command not found
 </code></pre></div></div>
@@ -233,6 +235,39 @@ Do you want to continue? [Y/n] Y
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu@2cffa83792ef:~$ pip --version
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+</code></pre></div></div>
+
+<h1 id="pvenv로-설치">pvenv로 설치</h1>
+
+<h2 id="pvenv-설치">pvenv 설치</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(my-pj-venv) $ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1687  100  1687    0     0   5604      0 --:--:-- --:--:-- --:--:--  5604
+Cloning into '/home/ubuntu/.pyenv'...
+
+</code></pre></div></div>
+
+<h2 id="pyenv-환경변수-설정">pyenv 환경변수 설정</h2>
+
+<p>shell에서 pyenv를 사용할 수 있도록 환경변수에 추가</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu@2cffa83792ef:~$  vi ~/.bashrc
+</code></pre></div></div>
+
+<p>맨 아래에 다음과 같이 추가 후 저장</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+</code></pre></div></div>
+
+<h2 id="pyenv-필수-패키지-설치">pyenv 필수 패키지 설치</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev
 </code></pre></div></div>
 
 
@@ -321,10 +356,22 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
                                 
                                 
                                   
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
                                     
                                         
                                         
-                                            <li><a href="/others-08">Ubuntu에 nginx 설치</a></li>
+                                            <li><a href="/others-11">Ubuntu에 Postgresql 설치</a></li>
                                         
                                     
                                   
@@ -333,7 +380,7 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
                                     
                                         
                                         
-                                            <li><a href="/others-07">Ubuntu에 git 설치</a></li>
+                                            <li><a href="/others-10">Django 배포</a></li>
                                         
                                     
                                   
@@ -342,29 +389,9 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
                                     
                                         
                                         
-                                            <li><a href="/others-06">Ubuntu에 django 설치</a></li>
+                                            <li><a href="/others-09">Ubuntu에 uwsgi 설치</a></li>
                                         
                                     
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
                                   
                                 
                                   
@@ -379,6 +406,49 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
                                         
                                         
                                     
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
                                   
                                 
                                   
@@ -416,7 +486,7 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
                         <footer class="read-next-card-footer">
                             <a href="/tag/unclassified/">
                                 
-                                    See all 7 posts  →
+                                    See all 10 posts  →
                                 
                             </a>
                         </footer>

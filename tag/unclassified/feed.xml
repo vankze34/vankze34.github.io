@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/unclassified/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-13T18:13:20+09:00</updated>
+  <updated>2021-11-19T16:28:27+09:00</updated>
   <id>http://localhost:4000/tag/unclassified/feed.xml</id>
 
   
@@ -32,63 +32,18 @@
 
   
     <entry>
-      <title type="html">Ubuntu에 nginx 설치</title>
-      <link href="http://localhost:4000/others-08" rel="alternate" type="text/html" title="Ubuntu에 nginx 설치" />
-      <published>2021-11-13T00:00:00+09:00</published>
-      <updated>2021-11-13T00:00:00+09:00</updated>
-      <id>http://localhost:4000/others-08</id>
-      <content type="html" xml:base="http://localhost:4000/others-08">&lt;h2 id=&quot;nginx-install되어있는지-확인&quot;&gt;nginx install되어있는지 확인&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ nginx --version
--bash: nginx: command not found
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+      <title type="html">Django 배포</title>
+      <link href="http://localhost:4000/others-10" rel="alternate" type="text/html" title="Django 배포" />
+      <published>2021-11-14T00:00:00+09:00</published>
+      <updated>2021-11-14T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-10</id>
+      <content type="html" xml:base="http://localhost:4000/others-10">&lt;h3 id=&quot;django는-웹-서버와-직접-통신할-수-없어서-둘-사이에-wsgi를-두어야-한다&quot;&gt;Django는 웹 서버와 직접 통신할 수 없어서 둘 사이에 WSGI를 두어야 한다.&lt;/h3&gt;
 
-&lt;h2 id=&quot;nginx-설치&quot;&gt;nginx 설치&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo apt-get install nginx
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
+&lt;h2 id=&quot;uwsgi-설치&quot;&gt;uWSGI 설치&lt;/h2&gt;
 
-...
+&lt;p&gt;link&lt;/p&gt;
 
-After this operation, 52.8 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Y
-
-...
-
-Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by
-presenting a list of cities, representing the time zones in which they are located.
-  1. Africa   3. Antarctica  5. Arctic  7. Atlantic  9. Indian    11. SystemV  13. Etc
-  2. America  4. Australia   6. Asia    8. Europe    10. Pacific  12. US
-Geographic area: 6
-
-...
-
-Please select the city or region corresponding to your time zone.
-
-  1. Aden      16. Brunei       31. Hong_Kong    46. Kuala_Lumpur  61. Pyongyang      76. Tehran
-  
-...
-
-  9. Baghdad   24. Dubai        39. Kamchatka    54. Nicosia       69. Seoul          84. Ust-Nera
-
-...
-
-Time zone: 69
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nginx -V
-nginx version: nginx/1.18.0 (Ubuntu)
-built with OpenSSL 1.1.1f  31 Mar 2020
-
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;nginx-실행&quot;&gt;nginx 실행&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo service nginx start
- * Starting nginx nginx                                                                                        [ OK ] 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;h2 id=&quot;uwsgi&quot;&gt;uWSGI&lt;/h2&gt;</content>
 
       
       
@@ -109,7 +64,7 @@ built with OpenSSL 1.1.1f  31 Mar 2020
       
 
       
-        <summary type="html">nginx install되어있는지 확인 ubuntu@2cffa83792ef:~$ nginx --version -bash: nginx: command not found</summary>
+        <summary type="html">Django는 웹 서버와 직접 통신할 수 없어서 둘 사이에 WSGI를 두어야 한다.</summary>
       
 
       
@@ -117,46 +72,37 @@ built with OpenSSL 1.1.1f  31 Mar 2020
     </entry>
   
     <entry>
-      <title type="html">Ubuntu에 git 설치</title>
-      <link href="http://localhost:4000/others-07" rel="alternate" type="text/html" title="Ubuntu에 git 설치" />
-      <published>2021-11-13T00:00:00+09:00</published>
-      <updated>2021-11-13T00:00:00+09:00</updated>
-      <id>http://localhost:4000/others-07</id>
-      <content type="html" xml:base="http://localhost:4000/others-07">&lt;h2 id=&quot;git-install되어있는지-확인&quot;&gt;git install되어있는지 확인&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ git --version
--bash: git: command not found
+      <title type="html">Ubuntu에 uwsgi 설치</title>
+      <link href="http://localhost:4000/others-09" rel="alternate" type="text/html" title="Ubuntu에 uwsgi 설치" />
+      <published>2021-11-14T00:00:00+09:00</published>
+      <updated>2021-11-14T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-09</id>
+      <content type="html" xml:base="http://localhost:4000/others-09">&lt;h2 id=&quot;가상환경-활성화&quot;&gt;가상환경 활성화&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ source my-pj-venv/bin/activate
+(my-pj-venv) ubuntu@2cffa83792ef:~$ 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;git-설치&quot;&gt;git 설치&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ sudo apt-get install git
+&lt;h2 id=&quot;uwsgi가-install되어있는지-확인&quot;&gt;uwsgi가 install되어있는지 확인&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ uwsgi --version
+-bash: uwsgi: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pip를-이용해-uwsgi-설치&quot;&gt;pip를 이용해 uwsgi 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ sudo pip install uwsgi
 [sudo] password for ubuntu: 
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-
-...
-
-After this operation, 52.1 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Y
-
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git --version
-git version 2.25.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;git-설정&quot;&gt;git 설정&lt;/h2&gt;
-
-&lt;p&gt;깃에 push했을때 올라갈 내 정보를 입력&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.name [git_username]
-(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.mail [git_email]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;git-repository-가져오기&quot;&gt;git repository 가져오기&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ git clone [pj_url.git]
+Collecting uwsgi
+  Downloading uwsgi-2.0.20.tar.gz (804 kB)
+     |████████████████████████████████| 804 kB 2.5 MB/s 
+Building wheels for collected packages: uwsgi
+  Building wheel for uwsgi (setup.py) ... done
+  Created wheel for uwsgi: filename=uWSGI-2.0.20-cp38-cp38-linux_x86_64.whl size=553634 sha256=88f71534495e9368737a4f1532555f39cbcac9c737d6f096f47e5ff6db6a1853
+  Stored in directory: /root/.cache/pip/wheels/cb/4d/54/002a215100a8c4e125654600f0a4304dae742442ddc4ba6ea1
+Successfully built uwsgi
+Installing collected packages: uwsgi
+Successfully installed uwsgi-2.0.20
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
@@ -178,7 +124,7 @@ git version 2.25.1
       
 
       
-        <summary type="html">git install되어있는지 확인 ubuntu@2cffa83792ef:~$ git --version -bash: git: command not found</summary>
+        <summary type="html">가상환경 활성화</summary>
       
 
       
@@ -186,41 +132,30 @@ git version 2.25.1
     </entry>
   
     <entry>
-      <title type="html">Ubuntu에 django 설치</title>
-      <link href="http://localhost:4000/others-06" rel="alternate" type="text/html" title="Ubuntu에 django 설치" />
-      <published>2021-11-13T00:00:00+09:00</published>
-      <updated>2021-11-13T00:00:00+09:00</updated>
-      <id>http://localhost:4000/others-06</id>
-      <content type="html" xml:base="http://localhost:4000/others-06">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
-Python 3.8.10
+      <title type="html">Ubuntu에 Postgresql 설치</title>
+      <link href="http://localhost:4000/others-11" rel="alternate" type="text/html" title="Ubuntu에 Postgresql 설치" />
+      <published>2021-11-14T00:00:00+09:00</published>
+      <updated>2021-11-14T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-11</id>
+      <content type="html" xml:base="http://localhost:4000/others-11">&lt;h2 id=&quot;postgresql과-postgresql-contrib패키지-설치&quot;&gt;postgresql과 postgresql-contrib패키지 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get install postgresql postgresql-contrib
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+
+...
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;python-가상환경-설치&quot;&gt;python 가상환경 설치&lt;/h2&gt;
-
-&lt;h2 id=&quot;python-가상환경-활성화&quot;&gt;python 가상환경 활성화&lt;/h2&gt;
-
-&lt;h2 id=&quot;django-설치&quot;&gt;django 설치&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ pip install django
-Collecting django
-  Downloading Django-3.2.9-py3-none-any.whl (7.9 MB)
-     |████████████████████████████████| 7.9 MB 2.3 MB/s 
-Collecting sqlparse&amp;gt;=0.2.2
-  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
-     |████████████████████████████████| 42 kB 2.1 MB/s 
-Collecting asgiref&amp;lt;4,&amp;gt;=3.3.2
-  Downloading asgiref-3.4.1-py3-none-any.whl (25 kB)
-Collecting pytz
-  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
-     |████████████████████████████████| 503 kB 59.0 MB/s 
-Installing collected packages: sqlparse, asgiref, pytz, django
-Successfully installed asgiref-3.4.1 django-3.2.9 pytz-2021.3 sqlparse-0.4.2
+&lt;h2 id=&quot;postgresql을-실행시켜-동작-확인&quot;&gt;postgresql을 실행시켜 동작 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo service postgresql start
+ * Starting PostgreSQL 12 database server                                [ OK ] 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;django-버전-확인&quot;&gt;django 버전 확인&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ python -m django --version
-3.2.9
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ service postgresql status
+12/main (port 5432): online
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
@@ -242,7 +177,7 @@ Successfully installed asgiref-3.4.1 django-3.2.9 pytz-2021.3 sqlparse-0.4.2
       
 
       
-        <summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version Python 3.8.10</summary>
+        <summary type="html">postgresql과 postgresql-contrib패키지 설치</summary>
       
 
       
@@ -338,7 +273,9 @@ my-pj-venv
       <published>2021-11-13T00:00:00+09:00</published>
       <updated>2021-11-13T00:00:00+09:00</updated>
       <id>http://localhost:4000/others-04</id>
-      <content type="html" xml:base="http://localhost:4000/others-04">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+      <content type="html" xml:base="http://localhost:4000/others-04">&lt;h1 id=&quot;apt-get으로-설치&quot;&gt;apt-get으로 설치&lt;/h1&gt;
+
+&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
 -bash: python3: command not found
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -390,6 +327,39 @@ Do you want to continue? [Y/n] Y
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ pip --version
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;pvenv로-설치&quot;&gt;pvenv로 설치&lt;/h1&gt;
+
+&lt;h2 id=&quot;pvenv-설치&quot;&gt;pvenv 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) $ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1687  100  1687    0     0   5604      0 --:--:-- --:--:-- --:--:--  5604
+Cloning into &apos;/home/ubuntu/.pyenv&apos;...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pyenv-환경변수-설정&quot;&gt;pyenv 환경변수 설정&lt;/h2&gt;
+
+&lt;p&gt;shell에서 pyenv를 사용할 수 있도록 환경변수에 추가&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$  vi ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;맨 아래에 다음과 같이 추가 후 저장&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...
+export PATH=&quot;~/.pyenv/bin:$PATH&quot;
+eval &quot;$(pyenv init -)&quot;
+eval &quot;$(pyenv virtualenv-init -)&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pyenv-필수-패키지-설치&quot;&gt;pyenv 필수 패키지 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
@@ -411,7 +381,7 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
       
 
       
-        <summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version -bash: python3: command not found</summary>
+        <summary type="html">apt-get으로 설치</summary>
       
 
       
@@ -539,6 +509,226 @@ root    ALL=(ALL:ALL) ALL
     </entry>
   
     <entry>
+      <title type="html">Ubuntu에 django 설치</title>
+      <link href="http://localhost:4000/others-06" rel="alternate" type="text/html" title="Ubuntu에 django 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-06</id>
+      <content type="html" xml:base="http://localhost:4000/others-06">&lt;h2 id=&quot;python이-install되어있는지-확인&quot;&gt;python이 install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ python3 --version
+Python 3.8.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;python-가상환경-설치&quot;&gt;python 가상환경 설치&lt;/h2&gt;
+
+&lt;h2 id=&quot;python-가상환경-활성화&quot;&gt;python 가상환경 활성화&lt;/h2&gt;
+
+&lt;h2 id=&quot;django-설치&quot;&gt;django 설치&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ pip install django
+Collecting django
+  Downloading Django-3.2.9-py3-none-any.whl (7.9 MB)
+     |████████████████████████████████| 7.9 MB 2.3 MB/s 
+Collecting sqlparse&amp;gt;=0.2.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 2.1 MB/s 
+Collecting asgiref&amp;lt;4,&amp;gt;=3.3.2
+  Downloading asgiref-3.4.1-py3-none-any.whl (25 kB)
+Collecting pytz
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+     |████████████████████████████████| 503 kB 59.0 MB/s 
+Installing collected packages: sqlparse, asgiref, pytz, django
+Successfully installed asgiref-3.4.1 django-3.2.9 pytz-2021.3 sqlparse-0.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;django-버전-확인&quot;&gt;django 버전 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ python -m django --version
+3.2.9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">python이 install되어있는지 확인 ubuntu@2cffa83792ef:~$ python3 --version Python 3.8.10</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 nginx 설치</title>
+      <link href="http://localhost:4000/others-08" rel="alternate" type="text/html" title="Ubuntu에 nginx 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-08</id>
+      <content type="html" xml:base="http://localhost:4000/others-08">&lt;h2 id=&quot;nginx-install되어있는지-확인&quot;&gt;nginx install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ nginx --version
+-bash: nginx: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;nginx-설치&quot;&gt;nginx 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo apt-get install nginx
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+...
+
+After this operation, 52.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+
+Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by
+presenting a list of cities, representing the time zones in which they are located.
+  1. Africa   3. Antarctica  5. Arctic  7. Atlantic  9. Indian    11. SystemV  13. Etc
+  2. America  4. Australia   6. Asia    8. Europe    10. Pacific  12. US
+Geographic area: 6
+
+...
+
+Please select the city or region corresponding to your time zone.
+
+  1. Aden      16. Brunei       31. Hong_Kong    46. Kuala_Lumpur  61. Pyongyang      76. Tehran
+  
+...
+
+  9. Baghdad   24. Dubai        39. Kamchatka    54. Nicosia       69. Seoul          84. Ust-Nera
+
+...
+
+Time zone: 69
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ nginx -V
+nginx version: nginx/1.18.0 (Ubuntu)
+built with OpenSSL 1.1.1f  31 Mar 2020
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;nginx-실행&quot;&gt;nginx 실행&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ sudo service nginx start
+ * Starting nginx nginx                                                                                        [ OK ] 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">nginx install되어있는지 확인 ubuntu@2cffa83792ef:~$ nginx --version -bash: nginx: command not found</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ubuntu에 git 설치</title>
+      <link href="http://localhost:4000/others-07" rel="alternate" type="text/html" title="Ubuntu에 git 설치" />
+      <published>2021-11-13T00:00:00+09:00</published>
+      <updated>2021-11-13T00:00:00+09:00</updated>
+      <id>http://localhost:4000/others-07</id>
+      <content type="html" xml:base="http://localhost:4000/others-07">&lt;h2 id=&quot;git-install되어있는지-확인&quot;&gt;git install되어있는지 확인&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu@2cffa83792ef:~$ git --version
+-bash: git: command not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-설치&quot;&gt;git 설치&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ sudo apt-get install git
+[sudo] password for ubuntu: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+...
+
+After this operation, 52.1 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git --version
+git version 2.25.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-설정&quot;&gt;git 설정&lt;/h2&gt;
+
+&lt;p&gt;깃에 push했을때 올라갈 내 정보를 입력&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.name [git_username]
+(my-pj-venv) ubuntu@2cffa83792ef:~$ git config --global user.mail [git_email]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;git-repository-가져오기&quot;&gt;git repository 가져오기&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(my-pj-venv) ubuntu@2cffa83792ef:~/my-pj-venv$ git clone [pj_url.git]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Jaekwang Van</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="unclassified" />
+      
+
+      
+        <summary type="html">git install되어있는지 확인 ubuntu@2cffa83792ef:~$ git --version -bash: git: command not found</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">CentOS의 Jupyter Notebook 외부에서 접속하기</title>
       <link href="http://localhost:4000/others-02" rel="alternate" type="text/html" title="CentOS의 Jupyter Notebook 외부에서 접속하기" />
       <published>2021-10-30T00:00:00+09:00</published>
@@ -653,82 +843,6 @@ passwd()
 
       
         <summary type="html">선행: CentOS에 Jupyter Notebook 설치</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">CentOS에 Jupyter Notebook 설치</title>
-      <link href="http://localhost:4000/others-01" rel="alternate" type="text/html" title="CentOS에 Jupyter Notebook 설치" />
-      <published>2021-10-30T00:00:00+09:00</published>
-      <updated>2021-10-30T00:00:00+09:00</updated>
-      <id>http://localhost:4000/others-01</id>
-      <content type="html" xml:base="http://localhost:4000/others-01">&lt;h3 id=&quot;설치-스크립트-다운&quot;&gt;설치 스크립트 다운&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /tmp
-$ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;스크립트-데이터-무결성-확인-스크립트-체크섬&quot;&gt;스크립트 데이터 무결성 확인 (스크립트 체크섬)&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sha256sum Anaconda3-5.3.1-Linux-x86_64.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;위에서-출력된-hash가-아래의-주소의-sha256과-일치하는지-확인&quot;&gt;위에서 출력된 hash가 아래의 주소의 sha256과 일치하는지 확인&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-5.3.1-Linux-x86_64.sh-hash.html&quot;&gt;https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-5.3.1-Linux-x86_64.sh-hash.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;아나콘다-설치-스크립트-실행&quot;&gt;아나콘다 설치 스크립트 실행&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bash Anaconda3-5.3.1-Linux-x86_64.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;환경변수-적용&quot;&gt;환경변수 적용&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;위의-환경변수가-적용-안됐을-시&quot;&gt;위의 환경변수가 적용 안됐을 시&lt;/h3&gt;
-
-&lt;p&gt;~/.bashrc 최하단에 직접 추가&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ vi ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...
-(이상 생략)
-
-export PATH=&quot;/home/(username)/anaconda3/bin:$PATH&quot;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;확인&quot;&gt;확인&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ conda info
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;아나콘다 정보가 나오면 성공&lt;/p&gt;
-
-&lt;h3 id=&quot;기동&quot;&gt;기동&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Jaekwang Van</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="unclassified" />
-      
-
-      
-        <summary type="html">설치 스크립트 다운 $ cd /tmp $ curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh</summary>
       
 
       

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Chapter02 - 04. Model Selection 모듈 소개 (1)</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="데이터 사이언스 훈련장" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/ml-ch02-04_2" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Vans DS Gym" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Chapter02 - 04. Model Selection 모듈 소개 (1)" />
+    <meta property="og:description" content="교차 검증 과적합(Overfitting)이란 모델이 학습 데이터에만 과도하게 최적화되어 실제 예측 성능이 과도하게 떨어지는 것을 말한다. 과적합이라는 문제점을 개선하기 위해 교차 검증을 수행한다. 교차 검증은 본고사를 치르기 전에 모의고사를 여러번 보는 것과 같다. 이상치, 분포도, 다향한 속성값, 피처 중요도 등 여러 영향에 의해 생기는 데이터 편중을 막기 위해서 별도의 여러 세트로" />
+    <meta property="og:url" content="http://localhost:4000/ml-ch02-04_2" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2021-11-18T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-11-18T00:00:00+09:00" />
+    <meta property="article:tag" content="Machinelearning" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chapter02 - 04. Model Selection 모듈 소개 (1)" />
+    <meta name="twitter:description" content="교차 검증 과적합(Overfitting)이란 모델이 학습 데이터에만 과도하게 최적화되어 실제 예측 성능이 과도하게 떨어지는 것을 말한다. 과적합이라는 문제점을 개선하기 위해 교차 검증을 수행한다. 교차 검증은 본고사를 치르기 전에 모의고사를 여러번 보는 것과 같다. 이상치, 분포도, 다향한 속성값, 피처 중요도 등 여러 영향에 의해 생기는 데이터 편중을 막기 위해서 별도의 여러 세트로" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Vans DS Gym" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Machinelearning" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Vans DS Gym",
+        "logo": "http://localhost:4000/"
+    },
+    "url": "http://localhost:4000/ml-ch02-04_2",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/built/images/blog-cover1.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/ml-ch02-04_2"
+    },
+    "description": "교차 검증 과적합(Overfitting)이란 모델이 학습 데이터에만 과도하게 최적화되어 실제 예측 성능이 과도하게 떨어지는 것을 말한다. 과적합이라는 문제점을 개선하기 위해 교차 검증을 수행한다. 교차 검증은 본고사를 치르기 전에 모의고사를 여러번 보는 것과 같다. 이상치, 분포도, 다향한 속성값, 피처 중요도 등 여러 영향에 의해 생기는 데이터 편중을 막기 위해서 별도의 여러 세트로"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Chapter02 - 04. Model Selection 모듈 소개 (1)" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="http://localhost:4000/">Vans DS Gym</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+    <li class="nav-python" role="menuitem"><a href="/tag/python/">Python</a></li>
+    <li class="nav-ml" role="menuitem"><a href="/tag/machinelearning/">머신러닝</a></li>
+    <li class="nav-docker" role="menuitem"><a href="/tag/docker/">Docker</a></li>
+    <li class="nav-algorithm" role="menuitem"><a href="/tag/algorithm/">algorithm</a></li>
+    <li class="nav-unclassified" role="menuitem"><a href="/tag/unclassified/">미분류</a></li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/archive.html">All Posts</a>
+    </li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/author_archive.html">Tag별 Posts</a>
+    </li>
+</ul>
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-machinelearning post tag-ml no-image">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="18 November 2021">18 November 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/machinelearning/'>MACHINELEARNING</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Chapter02 - 04. Model Selection 모듈 소개 (1)</h1>
+            </header>
+
+            <!--
+            
+            -->
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <h3 id="교차-검증">교차 검증</h3>
+
+<p>과적합(Overfitting)이란 모델이 학습 데이터에만 과도하게 최적화되어 실제 예측 성능이 과도하게 떨어지는 것을 말한다. 과적합이라는 문제점을 개선하기 위해 교차 검증을 수행한다.</p>
+
+<p>교차 검증은 본고사를 치르기 전에 모의고사를 여러번 보는 것과 같다. 이상치, 분포도, 다향한 속성값, 피처 중요도 등 여러 영향에 의해 생기는 데이터 편중을 막기 위해서 <strong>별도의 여러 세트로 구성된 학습 데이터 세트와 검증 데이터 세트에서 학습과 평가를 수행하는 것</strong>이다.</p>
+
+<h4 id="k폴드-교차-검증">K폴드 교차 검증</h4>
+
+<p>가장 보편적으로 사용되는 교차 검증 기법이다.</p>
+
+<p>K개의 데이터 폴드 세트를 만들고 K번만큼 각 폴드 세트에 학습과 검증 평가를 반복적으로 수행하는 방법이다.</p>
+
+<p><img src="assets/built/images/ml/2021-11-17-ml-ch02-01.png" alt="K폴드" /></p>
+
+<p>사이키런에서는 K 폴드 교차 검증 프로세스를 구현하기 위해 KFold와 StratifiedKFold 클래스를 제공한다.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">KFold</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">data</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">target</span>
+<span class="n">dt_clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">156</span><span class="p">)</span>
+
+<span class="c1"># 5개의 폴드 세트로 분리하는 KFold 객체와 폴드 세트별 정확도를 담을 리스트 객체 생성.
+</span><span class="n">kfold</span> <span class="o">=</span> <span class="n">KFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">cv_accuracy</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'붓꽃 데이터 세트 크기:'</span><span class="p">,</span><span class="n">features</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div></div>
+
+<hr />
+<p>【Output】</p>
+
+<p>붓꽃 데이터 세트 크기: 150</p>
+
+<hr />
+
+<p>전체 붓꽃 데이터는 모두 150개이기 때문에 학습용 데이터 세트는 120개, 검증 테스트 데이터 세트는 30개로 분할된다.
+KFold객체는 split()을 호출하면 학습용/검증용 데이터로 분할할 수 있는 인덱스를 반환한다.</p>
+
+<p>다음의 예제를 통해 교차 검증 수행 시마다 학습과 검증을 반복해본다.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n_iter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># KFold객체의 split( ) 호출하면 폴드 별 학습용, 검증용 테스트의 로우 인덱스를 array로 반환  
+</span><span class="k">for</span> <span class="n">train_index</span><span class="p">,</span> <span class="n">test_index</span>  <span class="ow">in</span> <span class="n">kfold</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">features</span><span class="p">):</span>
+    <span class="c1"># kfold.split( )으로 반환된 인덱스를 이용하여 학습용, 검증용 테스트 데이터 추출
+</span>    <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="n">train_index</span><span class="p">],</span> <span class="n">features</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+    <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">label</span><span class="p">[</span><span class="n">train_index</span><span class="p">],</span> <span class="n">label</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+    <span class="c1">#학습 및 예측 
+</span>    <span class="n">dt_clf</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span> <span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>    
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">dt_clf</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">n_iter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="c1"># 반복 시 마다 정확도 측정 
+</span>    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">pred</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">train_size</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">test_size</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">#{0} 교차 검증 정확도 :{1}, 학습 데이터 크기: {2}, 검증 데이터 크기: {3}'</span>
+          <span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n_iter</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="n">train_size</span><span class="p">,</span> <span class="n">test_size</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'#{0} 검증 세트 인덱스:{1}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n_iter</span><span class="p">,</span><span class="n">test_index</span><span class="p">))</span>
+    <span class="n">cv_accuracy</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy</span><span class="p">)</span>
+    
+<span class="c1"># 개별 iteration별 정확도를 합하여 평균 정확도 계산 
+</span><span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">## 평균 검증 정확도:'</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">cv_accuracy</span><span class="p">))</span> 
+</code></pre></div></div>
+
+<hr />
+<p>【Output】</p>
+
+<p>#1 교차 검증 정확도 :1.0, 학습 데이터 크기: 120, 검증 데이터 크기: 30
+#1 검증 세트 인덱스:[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29]</p>
+
+<p>#2 교차 검증 정확도 :0.9667, 학습 데이터 크기: 120, 검증 데이터 크기: 30
+#2 검증 세트 인덱스:[30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
+ 54 55 56 57 58 59]</p>
+
+<p>#3 교차 검증 정확도 :0.8667, 학습 데이터 크기: 120, 검증 데이터 크기: 30
+#3 검증 세트 인덱스:[60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83
+ 84 85 86 87 88 89]</p>
+
+<p>#4 교차 검증 정확도 :0.9333, 학습 데이터 크기: 120, 검증 데이터 크기: 30
+#4 검증 세트 인덱스:[ 90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119]</p>
+
+<p>#5 교차 검증 정확도 :0.7333, 학습 데이터 크기: 120, 검증 데이터 크기: 30
+#5 검증 세트 인덱스:[120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137
+ 138 139 140 141 142 143 144 145 146 147 148 149]</p>
+
+<p>##평균 검증 정확도: 0.9</p>
+
+<hr />
+<p><br /></p>
+
+<h4 id="stratified-k-폴드">Stratified K 폴드</h4>
+
+<p>불균형한(imbalanced) 분포도를 가진 레이블(결정 클래스) 데이터 집합을 위한 K 폴드 방식이다.</p>
+
+<p>예) 대출 사기 데이터 예측
+데이터 세트 = 1억 건
+수십개의 feature와 대출 사기 여부를 뜻하는 레이블(사기: 1, 정상: 0)로 구성되어있다. 그런데 대부분의 데이터는 정상 대출 일 것이다.
+0.0001%의 작은 확률로 대출 사기 레이블이 존재한다면 K폴드로 랜덤하게 학습/테스트 세트 인덱스를 고르더라도 제대로 반영이 안되는 경우가 쉽게 발생한다.</p>
+
+<p>Stratified K 폴드는 원본 데이터의 레이블 분포를 먼저 고려한 뒤 이 분포와 동일하게 학습과 검증 데이터 세트를 분배한다.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load</span> <span class="n">iris</span><span class="p">()</span>
+<span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="p">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">]</span><span class="o">=</span><span class="n">iris</span><span class="p">.</span><span class="n">target</span>
+<span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">].</span><span class="n">value_counts</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>【Output】</p>
+
+<hr />
+<p>2      50 <br />
+1      50 <br />
+0      50</p>
+
+<hr />
+
+<p>레이블 값은 0, 1, 2 모두 50개로 동일하다.
+Setosa, Versicolor, Virginica 모두 50개 인 것이다.
+이슈가 발생하는 현상을 도출하기 위해 3개의 폴드 세트를 KFold로 생성하고 각 교차 검증 시마다 생성되는 학습/검증 레이블 데이터 값의 분포도를 확인해보자.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">kfold</span> <span class="o">=</span> <span class="n">KFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">n_iter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">train_index</span><span class="p">,</span> <span class="n">test_index</span> <span class="ow">in</span> <span class="n">kfold</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">iris_df</span><span class="p">):</span>
+    <span class="n">n_iter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">label_train</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">].</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_index</span><span class="p">]</span>
+    <span class="n">label_test</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">].</span><span class="n">iloc</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'## 교차 검증: {0}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n_iter</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'학습 레이블 데이터 분포:</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="n">label_train</span><span class="p">.</span><span class="n">value_counts</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'검증 레이블 데이터 분포:</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="n">label_test</span><span class="p">.</span><span class="n">value_counts</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p>【Output】</p>
+
+<hr />
+<p>## 교차 검증: 1 <br />
+학습 레이블 데이터 분포: <br />
+ 2    50 <br />
+1    50 <br />
+검증 레이블 데이터 분포: <br />
+ 0    50 <br />
+## 교차 검증: 2 <br />
+학습 레이블 데이터 분포: <br />
+ 2    50 <br />
+0    50 <br />
+검증 레이블 데이터 분포: <br />
+ 1    50 <br />
+## 교차 검증: 3 <br />
+학습 레이블 데이터 분포: <br />
+ 1    50 <br />
+0    50 <br />
+검증 레이블 데이터 분포: <br />
+ 2    50 <br /></p>
+
+<hr />
+
+<p>교차검증: 1의 경우는 학습 레이블로 1, 2 값이 각각 50개가 추출되고 검증 레이블로 0이 50개 추출되었다. 학습 레이블로는 1, 2밖에 없으므로 0의 경우는 전혀 학습하지 못한다. 반대로 검증 레이블은 0 밖에 없으므로 학습 모델은 0을 예측하지 못한다. 이런 방법으로 데이터 세트를 분할하면 검증 예측도는 0이 될 수 밖에 없다.</p>
+
+<p>StratifiedFold는 이렇게 KFold로 분할된 레이블 데이터 세트가 전체 레이블 값의 분포도를 반영하지 못하는 문제를 해결 할 수 있다.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedFold</span>
+
+<span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">n_iter</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">train_index</span><span class="p">,</span> <span class="n">test_index</span> <span class="ow">in</span> <span class="n">skf</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">iris_df</span><span class="p">,</span> <span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">]):</span>
+    <span class="n">n_iter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">label_train</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">].</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_index</span><span class="p">]</span>
+    <span class="n">label_test</span> <span class="o">=</span> <span class="n">iris_df</span><span class="p">[</span><span class="s">'label'</span><span class="p">].</span><span class="n">iloc</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'## 교차 검증: {0}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n_iter</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'학습 레이블 데이터 분포:</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="n">label_train</span><span class="p">.</span><span class="n">value_counts</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'검증 레이블 데이터 분포:</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="n">label_test</span><span class="p">.</span><span class="n">value_counts</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p>【Output】</p>
+
+<hr />
+<p>## 교차 검증: 1 <br />
+학습 레이블 데이터 분포:  <br />
+ 2    33 <br />
+1    33 <br />
+0    33 <br />
+검증 레이블 데이터 분포: <br />
+ 2    17 <br />
+1    17 <br />
+0    17 <br />
+## 교차 검증: 2 <br />
+학습 레이블 데이터 분포: <br />
+ 2    33 <br />
+1    33 <br />
+0    33 <br />
+검증 레이블 데이터 분포: <br />
+ 2    17 <br />
+1    17 <br />
+0    17 <br />
+## 교차 검증: 3 <br />
+학습 레이블 데이터 분포: <br />
+ 2    34 <br />
+1    34 <br />
+0    34 <br />
+검증 레이블 데이터 분포: <br />
+ 2    16 <br />
+1    16 <br />
+0    16 <br /></p>
+
+<hr />
+
+<p>출력 결과를 보면 학습 레이블과 검증 레이블 데이터 값의 분포도가 동일하게 할당 되었음을 볼 수 있다.</p>
+
+<p>다음은 붓꽃 데이터를 StratifiedKFold를 이용해 학습/검증해 본다.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dt_clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">156</span><span class="p">)</span>
+
+<span class="n">skfold</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">n_iter</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">cv_accuracy</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="c1"># StratifiedKFold의 split( ) 호출시 반드시 레이블 데이터 셋도 추가 입력 필요  
+</span><span class="k">for</span> <span class="n">train_index</span><span class="p">,</span> <span class="n">test_index</span>  <span class="ow">in</span> <span class="n">skfold</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">label</span><span class="p">):</span>
+    <span class="c1"># split( )으로 반환된 인덱스를 이용하여 학습용, 검증용 테스트 데이터 추출
+</span>    <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="n">train_index</span><span class="p">],</span> <span class="n">features</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+    <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">label</span><span class="p">[</span><span class="n">train_index</span><span class="p">],</span> <span class="n">label</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+    <span class="c1">#학습 및 예측 
+</span>    <span class="n">dt_clf</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span> <span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>    
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">dt_clf</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="c1"># 반복 시 마다 정확도 측정 
+</span>    <span class="n">n_iter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">pred</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">train_size</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">test_size</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">#{0} 교차 검증 정확도 :{1}, 학습 데이터 크기: {2}, 검증 데이터 크기: {3}'</span>
+          <span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n_iter</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="n">train_size</span><span class="p">,</span> <span class="n">test_size</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'#{0} 검증 세트 인덱스:{1}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n_iter</span><span class="p">,</span><span class="n">test_index</span><span class="p">))</span>
+    <span class="n">cv_accuracy</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy</span><span class="p">)</span>
+    
+<span class="c1"># 교차 검증별 정확도 및 평균 정확도 계산 
+</span><span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">## 교차 검증별 정확도:'</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nb">round</span><span class="p">(</span><span class="n">cv_accuracy</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'## 평균 검증 정확도:'</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">cv_accuracy</span><span class="p">))</span> 
+</code></pre></div></div>
+
+<p>【Output】</p>
+
+<hr />
+<p>#1 교차 검증 정확도 :0.9804, 학습 데이터 크기: 99, 검증 데이터 크기: 51 <br />
+#1 검증 세트 인덱스:[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  50
+  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66 100 101
+ 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116]</p>
+
+<p>#2 교차 검증 정확도 :0.9216, 학습 데이터 크기: 99, 검증 데이터 크기: 51 <br />
+#2 검증 세트 인덱스:[ 17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  67
+  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83 117 118
+ 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133]</p>
+
+<p>#3 교차 검증 정확도 :0.9792, 학습 데이터 크기: 102, 검증 데이터 크기: 48 <br />
+#3 검증 세트 인덱스:[ 34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  84  85
+  86  87  88  89  90  91  92  93  94  95  96  97  98  99 134 135 136 137
+ 138 139 140 141 142 143 144 145 146 147 148 149]</p>
+
+<p>## 교차 검증별 정확도: [0.9804 0.9216 0.9792]</p>
+
+<p>## 평균 검증 정확도: 0.9604</p>
+
+<hr />
+
+<p>3개의 Stratified K 폴드로 교차 검증한 결과 평균 검증 정확도가 약 96.04%로 측정되었다. 일반적인 분류(Classification)에서의 교차 검증은 K 폴드가 아니라 Stratified K 폴드로 분할되어야 한다.</p>
+
+<p>하지만 회귀(Regression)에서는 Stratified K 폴드가 지원되지 않는다. 그 이유는 회귀의 결정값은 이산값 형태의 레이블이 아니라 연속된 숫자값이기 때문에 결정값별로 분포를 정하는 의미가 없기 때문이다.</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page 
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Vans DS Gym</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+            
+            -->
+            
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            var this_page_url = 'http://localhost:4000/ml-ch02-04_2';
+                            var this_page_identifier = '/ml-ch02-04_2';
+                            var this_page_title = 'Chapter02 - 04. Model Selection 모듈 소개 (1)';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Vans DS Gym &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/machinelearning/">Machinelearning</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/ml-ch02-03">Chapter02 - 03. 사이킷런의 기반 프레임워크 익히기</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/ml-ch01-01_bk">1장 컴퓨터는 데이터에서 배운다</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/ml-ch02-02">Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/machinelearning/">
+                                
+                                    See all 10 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template no-image">
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/ml-ch02-04_1">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Machinelearning</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Chapter02 - 04. Model Selection 모듈 소개 (1)</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>학습/테스트 데이터 셋 분리 - train_test_split()
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+            <span>Vans DS Gym</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Chapter02 - 04. Model Selection 모듈 소개 (1)</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Chapter02+-+04.+Model+Selection+%EB%AA%A8%EB%93%88+%EC%86%8C%EA%B0%9C+%281%29&amp;url=https://vankze34.github.io/ml-ch02-04_2"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/ml-ch02-04_2"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://localhost:4000/">Vans DS Gym</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyllt/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                <h1 class="subscribe-overlay-title">Subscribe to Vans DS Gym</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-xxxxxxxx-x', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>

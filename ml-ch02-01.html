@@ -11,7 +11,7 @@
 
 
 
-    <title>Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</title>
+    <title>Chapter02 - 01. 사이킷런 소개와 특징</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,58 +36,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="데이터 사이언스 훈련장" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/ml-ch01-02" />
+    <link rel="canonical" href="http://localhost:4000/ml-ch02-01" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Vans DS Gym" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" />
-    <meta property="og:description" content="02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지
-
-
-
-  머신러닝 패키지
-  행렬/선형대수/통계 패키지
-  데이터 핸들링
-  시각화
-
-
-파이썬 머신러닝을 위한 S/W 설치
-
-
-  Anaconda
-  파이썬 3.6이상
-  Visual Studio Code
-
-" />
-    <meta property="og:url" content="http://localhost:4000/ml-ch01-02" />
+    <meta property="og:title" content="Chapter02 - 01. 사이킷런 소개와 특징" />
+    <meta property="og:description" content="사이킷런(scikit-learn)은 오랜 기간 파이썬 세계에서 대표적인 머신러닝 라이브러리로 인정받았다. ※ 사이킷런의 특징 가장 파이썬스러운 API 제공 매우 다양한 알고리즘과 편리한 프레임워크와 API제공 오랜 기간 검증되었고 많은 환경에서 사용되는 성숙한 라이브러리 (base) VANKZE34:~ van$ python Python 3.8.3 (default, Jul 2 2020, 11:26:31) [Clang 10.0.0 ] :: Anaconda, Inc. on darwin Type" />
+    <meta property="og:url" content="http://localhost:4000/ml-ch02-01" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-10-28T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-10-28T00:00:00+09:00" />
+    <meta property="article:published_time" content="2021-11-17T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-11-17T00:00:00+09:00" />
     <meta property="article:tag" content="Machinelearning" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" />
-    <meta name="twitter:description" content="02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지
-
-
-
-  머신러닝 패키지
-  행렬/선형대수/통계 패키지
-  데이터 핸들링
-  시각화
-
-
-파이썬 머신러닝을 위한 S/W 설치
-
-
-  Anaconda
-  파이썬 3.6이상
-  Visual Studio Code
-
-" />
+    <meta name="twitter:title" content="Chapter02 - 01. 사이킷런 소개와 특징" />
+    <meta name="twitter:description" content="사이킷런(scikit-learn)은 오랜 기간 파이썬 세계에서 대표적인 머신러닝 라이브러리로 인정받았다. ※ 사이킷런의 특징 가장 파이썬스러운 API 제공 매우 다양한 알고리즘과 편리한 프레임워크와 API제공 오랜 기간 검증되었고 많은 환경에서 사용되는 성숙한 라이브러리 (base) VANKZE34:~ van$ python Python 3.8.3 (default, Jul 2 2020, 11:26:31) [Clang 10.0.0 ] :: Anaconda, Inc. on darwin Type" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -108,7 +74,7 @@
         "name": "Vans DS Gym",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/ml-ch01-02",
+    "url": "http://localhost:4000/ml-ch02-01",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/blog-cover1.png",
@@ -117,26 +83,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/ml-ch01-02"
+        "@id": "http://localhost:4000/ml-ch02-01"
     },
-    "description": "02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지
-
-
-
-  머신러닝 패키지
-  행렬/선형대수/통계 패키지
-  데이터 핸들링
-  시각화
-
-
-파이썬 머신러닝을 위한 S/W 설치
-
-
-  Anaconda
-  파이썬 3.6이상
-  Visual Studio Code
-
-"
+    "description": "사이킷런(scikit-learn)은 오랜 기간 파이썬 세계에서 대표적인 머신러닝 라이브러리로 인정받았다. ※ 사이킷런의 특징 가장 파이썬스러운 API 제공 매우 다양한 알고리즘과 편리한 프레임워크와 API제공 오랜 기간 검증되었고 많은 환경에서 사용되는 성숙한 라이브러리 (base) VANKZE34:~ van$ python Python 3.8.3 (default, Jul 2 2020, 11:26:31) [Clang 10.0.0 ] :: Anaconda, Inc. on darwin Type"
 }
     </script>
 
@@ -149,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Chapter02 - 01. 사이킷런 소개와 특징" href="/feed.xml" />
 
 
 </head>
@@ -213,7 +162,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="28 October 2021">28 October 2021</time>
+                    <time class="post-full-meta-date" datetime="17 November 2021">17 November 2021</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -223,7 +172,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</h1>
+                <h1 class="post-full-title">Chapter02 - 01. 사이킷런 소개와 특징</h1>
             </header>
 
             <!--
@@ -232,23 +181,33 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <h2 id="02-파이썬-머신러닝-생태계를-구성하는-주요-패키지">02. 파이썬 머신러닝 생태계를 구성하는 주요 패키지</h2>
+                    <p>사이킷런(scikit-learn)은 오랜 기간 파이썬 세계에서 대표적인 머신러닝 라이브러리로 인정받았다.</p>
+
+<p>※ 사이킷런의 특징</p>
+
+<ul>
+  <li>가장 파이썬스러운 API 제공</li>
+  <li>매우 다양한 알고리즘과 편리한 프레임워크와 API제공</li>
+  <li>오랜 기간 검증되었고 많은 환경에서 사용되는 성숙한 라이브러리</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) VANKZE34:~ van$ python
+Python 3.8.3 (default, Jul  2 2020, 11:26:31) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sklearn</span><span class="p">.</span><span class="n">__version__</span><span class="p">)</span>
+</code></pre></div></div>
+
 <hr />
+<p>【Output】</p>
 
-<ul>
-  <li>머신러닝 패키지</li>
-  <li>행렬/선형대수/통계 패키지</li>
-  <li>데이터 핸들링</li>
-  <li>시각화</li>
-</ul>
+<p>0.24.2</p>
 
-<h3 id="파이썬-머신러닝을-위한-sw-설치">파이썬 머신러닝을 위한 S/W 설치</h3>
-
-<ul>
-  <li>Anaconda</li>
-  <li>파이썬 3.6이상</li>
-  <li>Visual Studio Code</li>
-</ul>
+<hr />
 
                 </div>
             </section>
@@ -289,9 +248,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'http://localhost:4000/ml-ch01-02';
-                            var this_page_identifier = '/ml-ch01-02';
-                            var this_page_title = 'Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)';
+                            var this_page_url = 'http://localhost:4000/ml-ch02-01';
+                            var this_page_identifier = '/ml-ch02-01';
+                            var this_page_title = 'Chapter02 - 01. 사이킷런 소개와 특징';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -377,9 +336,6 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
-                                        
-                                        
-                                    
                                   
                                 
                                   
@@ -421,6 +377,9 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
                                     
                                   
                                 
@@ -480,7 +439,7 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/ml-ch01-03">
+            <a class="post-card-content-link" href="/ml-ch02-02">
                 <header class="post-card-header">
                     
                         
@@ -490,12 +449,11 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (3)</h2>
+                    <h2 class="post-card-title">Chapter02 - 02 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>03. 넘파이
-
+                        <p>분류(Classification)는 대표적인 지도학습(Supervised Learning) 방법의 하나이다.
 
 </p>
                     
@@ -508,7 +466,7 @@ into the {body} of the default.hbs template -->
                 <span class="reading-time">
                     
                     
-                      1 min read
+                      2 min read
                     
                 </span>
             </footer>
@@ -524,22 +482,21 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/ml-ch01-01">
+            <a class="post-card-content-link" href="/others-11">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Machinelearning</span>
+                                <span class="post-card-tags">Unclassified</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (1)</h2>
+                    <h2 class="post-card-title">Ubuntu에 Postgresql 설치</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>01. 머신러닝의 개념
-
+                        <p>postgresql과 postgresql-contrib패키지 설치
 
 </p>
                     
@@ -574,18 +531,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Chapter01 파이썬 기반의 머신러닝과 생태계의 이해 (2)</div>
+    <div class="floating-header-title">Chapter02 - 01. 사이킷런 소개와 특징</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Chapter01+%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EA%B8%B0%EB%B0%98%EC%9D%98+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EA%B3%BC+%EC%83%9D%ED%83%9C%EA%B3%84%EC%9D%98+%EC%9D%B4%ED%95%B4+%282%29&amp;url=https://vankze34.github.io/ml-ch01-02"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Chapter02+-+01.+%EC%82%AC%EC%9D%B4%ED%82%B7%EB%9F%B0+%EC%86%8C%EA%B0%9C%EC%99%80+%ED%8A%B9%EC%A7%95&amp;url=https://vankze34.github.io/ml-ch02-01"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/ml-ch01-02"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://vankze34.github.io/ml-ch02-01"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

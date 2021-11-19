@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/docker/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-11-13T18:13:20+09:00</updated>
+  <updated>2021-11-19T16:28:27+09:00</updated>
   <id>http://localhost:4000/tag/docker/feed.xml</id>
 
   
@@ -134,7 +134,19 @@ root@2cffa83792ef:/# chmod u+w /etc/sudoers
   &lt;li&gt;
     &lt;p&gt;chmod u+w [filename]: [filename] 소유 사용자에게 쓰기 권한 추가&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;curl-설치&quot;&gt;curl 설치&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@2cffa83792ef:/# apt-get install curl
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       
